@@ -1,0 +1,28 @@
+
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@import '../src/assets/fonts/poppins/stylesheet.css';
+@import "../src/assets/fonts/segoe-script/segoe-script.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.font-segoe {
+  font-family: "Segoe Script", serif !important;
+}
+
+.text-primary {
+  @apply text-[#00B207];
+}
+.text-secondary {
+  @apply text-[#2B572E];
+}
+.text-black {
+  @apply text-[#1A1A1A];
+}

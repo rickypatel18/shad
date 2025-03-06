@@ -10,11 +10,10 @@ import {
 const TopbarHeader = () => {
     return (
         <section className="signup-section w-[100%] bg-[#EDF2EE]  h-[42px] flex justify-center">
-            <div className=" w-[80%] flex flex-wrap flex-row justify-between items-center ">
+            <div className="w-[100%] lg:w-[80%] flex flex-wrap flex-row justify-between items-center ">
                 {/* Store Location Section  */}
-                <section className="flex items-center justify-center gap-[8px] flex-wrap">
-                    <CiLocationOn className="text-secondary h-[20px] w-[23px]" />
-
+                <section className="flex items-center gap-[8px] flex-wrap ">
+                    <CiLocationOn className="text-secondary h-[18px] w-[18px] " />
                     <p className="hidden md:block mb-0 text-[12px] font-weight-400 text-secondary">
                         Store Location: Lincoln- 344, Illinois, Chicago, USA
                     </p>

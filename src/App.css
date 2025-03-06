@@ -23,6 +23,12 @@
 .text-secondary {
   @apply text-[#2B572E];
 }
-.text-black {
+.text-blackc {
   @apply text-[#1A1A1A];
+}
+.text-whitec {
+  @apply text-[#FFFFFF];
+}
+.text-greyc {
+  @apply text-[#808080];
 }

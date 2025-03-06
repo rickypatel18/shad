@@ -4,7 +4,7 @@ import { NavigationLinks } from "./NavigationLinks";
 
 const NavigationHeader = () => {
   return (
-    <div className="flex justify-between w-[80%] h-[78px] items-center ">
+    <div className="flex justify-between w-[100%] lg:w-[80%] h-[78px] items-center ">
       <NavigationLinks />
       <Logo />
       <CartSection />

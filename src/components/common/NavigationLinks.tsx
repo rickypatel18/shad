@@ -15,8 +15,8 @@ export const NavigationLinks: React.FC = () => {
   const links = ["About Us", "Services", "Contact", "Shop", "Blog", "FAQ"];
 
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="flex gap-[27px]">
+    <NavigationMenu className="hidden lg:block">
+      <NavigationMenuList className="flex gap-[24px] xl:gap-[27px]">
         {links.map((link, index) => (
           <NavigationMenuItem key={index}>
             <NavigationMenuLink asChild>

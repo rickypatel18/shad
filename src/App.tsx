@@ -1,8 +1,10 @@
 import "./App.css";
-import {HeroCarousel } from "./components/common/HeroCarousel";
+import Feature from "./components/common/feature/Feature";
+import { HeroCarousel } from "./components/common/HeroCarousel";
 import NavigationHeader from "./components/common/NavigationHeader";
-
 import TopbarHeader from "./components/common/TopbarHeader";
+import Category from "./components/common/category/Category";
+import FoodStore from "./components/common/FoodStore";
 
 function App() {
   return (
@@ -10,6 +12,9 @@ function App() {
       <TopbarHeader />
       <NavigationHeader />
       <HeroCarousel />
+      <Feature />
+      <Category/>
+      <FoodStore/>
     </section>
   );
 }

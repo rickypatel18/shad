@@ -8,10 +8,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousal/carousel";
-
 import { GoArrowRight } from "react-icons/go";
-import Button from "@/components/custom/Button";
 import img1 from "../../assets/images/carousal/carousal-img.png";
+import CustomButton from "@/components/custom/CustomButton";
 
 const slides = [
   {
@@ -63,7 +62,7 @@ export function HeroCarousel() {
         >
           <CarouselContent>
             {slides.map((slide, index) => (
-              <CarouselItem key={index} >
+              <CarouselItem key={index}>
                 <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 items-center ">
                   <div className="md:col-span-2 lg:col-span-3 flex justify-center p-4">
                     <img
@@ -89,10 +88,9 @@ export function HeroCarousel() {
                       </p>
                     </div>
 
-                    <Button>
-                      Shop Now
-                      <GoArrowRight className="w-[20px] h-[20px] text-whitec" />
-                    </Button>
+                    <CustomButton text="Shop Now">
+                      <GoArrowRight className="w-5 h-5 text-white" />
+                    </CustomButton>
                   </div>
                 </div>
               </CarouselItem>
@@ -105,8 +103,9 @@ export function HeroCarousel() {
               <button
                 key={index}
                 onClick={() => embla && embla.scrollTo(index)}
-                className={`w-3 h-3 rounded-full ${index === selectedIndex ? "bg-green-500" : "bg-gray-400"
-                  }`}
+                className={`w-3 h-3 rounded-full ${
+                  index === selectedIndex ? "bg-green-500" : "bg-gray-400"
+                }`}
               />
             ))}
           </div>

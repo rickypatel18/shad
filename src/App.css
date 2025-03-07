@@ -1,11 +1,9 @@
-
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
 
-@import '../src/assets/fonts/poppins/stylesheet.css';
+@import "../src/assets/fonts/poppins/stylesheet.css";
 @import "../src/assets/fonts/segoe-script/segoe-script.css";
-
 
 * {
   margin: 0;

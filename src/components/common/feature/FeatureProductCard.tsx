@@ -6,7 +6,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const FeatureProductCard = () => {
   return (
-    <section className="main-feature-product-section w-full main-product-card-section mx-auto ">
+    <section className="main-feature-product-section w-full mx-auto ">
       <div
         className="w-[100%] flex justify-between items-center  "
         style={{ margin: "50px 0px 30px 0px" }}

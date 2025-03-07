@@ -2,6 +2,7 @@ import { LuHeadset } from "react-icons/lu";
 import { BsBox, BsTruck } from "react-icons/bs";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
+
 const FeatureCard = () => {
   return (
     <section className="feature-section w-full mx-auto ">
@@ -9,10 +10,7 @@ const FeatureCard = () => {
         {/* <!-- Feature Card --> */}
 
         <div
-          className="group flex flex-col items-center text-center gap-[16px] h-full relative 
-               after:block after:content-[''] after:absolute after:bottom-0 after:left-1/2 
-               after:w-0 after:h-[2px] after:bg-[#1A1A1A] after:transition-all after:duration-300 
-               group-hover:after:w-full group-hover:after:left-0"
+          className="group flex flex-col items-center text-center gap-[16px] h-full "
           style={{ padding: "40px" }}
         >
           {/* Image Container */}
@@ -28,7 +26,7 @@ const FeatureCard = () => {
               className="absolute inset-0 w-[80px] z-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
             />
             {/* Icon stays visible, but changes to red on hover */}
-            <BsBox className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:text-red-500 transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <BsBox  className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:text-red-500 transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
 
           {/* Text Content */}

@@ -5,7 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 const Category = () => {
   return (
     <div
-      className="w-full mx-auto flex justify-center flex-col"
+      className="w-full mx-auto flex justify-center items-center flex-col"
       style={{
         backgroundColor: " rgb(255,255,255)",
         background:
@@ -14,7 +14,7 @@ const Category = () => {
     >
       {/* for the heading of the category */}
       <div
-        className="w-[100%] flex justify-between items-center  "
+        className="w-[100%] lg:w-[80%] flex justify-between items-center "
         style={{ margin: "50px 0px 30px 0px" }}
       >
         <div className="">
@@ -40,6 +40,7 @@ const Category = () => {
           <CategoryCarousal />
         </div>
       </div>
+
     </div>
   );
 };

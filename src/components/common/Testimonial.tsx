@@ -132,6 +132,7 @@ const Testimonial = () => {
                 <div className="flex justify-between items-center mt-6">
                   <div className="flex items-center gap-[12px]">
                     <img
+                    src={avatar}
                       alt=""
                       className="rounded-full w-12"
                     />

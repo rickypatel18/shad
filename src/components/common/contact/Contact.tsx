@@ -17,23 +17,27 @@ const Contact = () => {
             className="group col-span-1 rounded-[8px] flex flex-col gap-[16px]"
             style={{ border: "1px solid #20B52633", padding: "20px" }}
           >
-            <div className="relative flex justify-center items-center w-[56px] h-[60px]  ">
+            <div className="relative flex justify-center items-center w-[56px] h-[60px]">
+              {/* Default Image (Hidden on Hover) */}
               <img
                 src={inc_n}
                 alt=""
-                className="absolute inset-0 w-[80px] z-0 rounded-full transition-opacity duration-300 group-hover:opacity-0 pointer-events-none"
+                className="absolute inset-0 w-[80px] z-0 rounded-full transition-opacity duration-300 group-hover:opacity-0"
               />
 
+              {/* Hover Image (Visible on Hover) */}
               <img
                 src={inc_h}
                 alt=""
-                className="absolute inset-0 w-[80px] z-10 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
+                className="absolute inset-0 w-[80px] z-10 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
 
-              <SlLocationPin className="absolute h-[22px] w-[22px] z-20 text-primary group-hover:text-red-500 transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+              {/* Location Icon (Always Visible & Changes Color on Hover) */}
+              <SlLocationPin className="h-[22px] w-[22px] z-20 text-primary transition-colors duration-300 group-hover:!text-white" />
             </div>
-            <div className="flex flex-col gap-[10px]  w-full break-words whitespace-normal">
-              <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[500] uppercase ">
+
+            <div className="flex flex-col gap-[10px] w-full break-words whitespace-normal">
+              <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[500] uppercase">
                 Our Location
               </p>
               <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#666666]">
@@ -60,7 +64,7 @@ const Contact = () => {
                 className="absolute inset-0 w-[80px] z-10 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
               />
 
-              <FiPhoneCall className="absolute h-[22px] w-[22px] z-20 text-primary group-hover:text-red-500 transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+              <FiPhoneCall className="h-[22px] w-[22px] z-20 text-primary transition-colors duration-300 group-hover:!text-white " />
             </div>
             <div className="flex flex-col gap-[10px] w-full break-words whitespace-normal">
               <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[500] uppercase ">
@@ -90,7 +94,7 @@ const Contact = () => {
                 className="absolute inset-0 w-[80px] z-10 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
               />
 
-              <FiMail className="absolute h-[22px] w-[22px] z-20 text-primary group-hover:text-red-500 transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+              <FiMail className="h-[22px] w-[22px] z-30 text-primary group-hover:!text-white transition-colors duration-300" />
             </div>
             <div className="flex flex-col gap-[10px] w-full break-words whitespace-normal">
               <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[500] uppercase ">

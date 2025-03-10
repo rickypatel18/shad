@@ -27,7 +27,7 @@ const FeatureCard = () => {
               className="absolute inset-0 w-[80px] z-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
             />
             {/* Icon stays visible, but changes to red on hover */}
-            <BsBox className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:text-red-500 transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <BsBox className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:!text-white transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
 
           {/* Text Content */}
@@ -56,7 +56,7 @@ const FeatureCard = () => {
               alt=""
               className="absolute inset-0 w-[80px] z-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
             />
-            <HiOutlineShoppingBag className="absolute h-[32px] w-[32px] z-50 text-primary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <HiOutlineShoppingBag className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:!text-white transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
           <div className="text-left flex flex-col gap-2  flex-grow">
             <h3 className="text-[16px] md:text-[18px] text-center font-[600] ">
@@ -83,7 +83,7 @@ const FeatureCard = () => {
               alt=""
               className="absolute inset-0 w-[80px] z-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
             />
-            <LuHeadset className="absolute h-[32px] w-[32px] z-50 text-primary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <LuHeadset className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:!text-white transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
           <div className="text-left flex flex-col gap-2  flex-grow">
             <h3 className="text-[16px] md:text-[18px] text-center font-[600] ">
@@ -110,7 +110,7 @@ const FeatureCard = () => {
               alt=""
               className="absolute inset-0 w-[80px] z-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
             />
-            <BsTruck className="absolute h-[32px] w-[32px] z-50 text-primary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <BsTruck className="absolute h-[32px] w-[32px] z-50 text-primary group-hover:!text-white transition-colors duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
 
           <div className="text-left flex flex-col gap-2  flex-grow">

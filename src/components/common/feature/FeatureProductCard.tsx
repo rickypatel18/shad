@@ -27,7 +27,7 @@ const FeatureProductCard = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[5px] md:gap-[10px] lg:gap-[15px] xl:gap-[20px]">
         {/* product card */}
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}
@@ -60,7 +60,7 @@ const FeatureProductCard = () => {
           </div>
         </div>
 
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}
@@ -92,7 +92,7 @@ const FeatureProductCard = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}
@@ -124,7 +124,7 @@ const FeatureProductCard = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}
@@ -156,7 +156,7 @@ const FeatureProductCard = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}
@@ -188,7 +188,7 @@ const FeatureProductCard = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}
@@ -220,7 +220,7 @@ const FeatureProductCard = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white border border-[#E6E6E6] md:p-4">
+        <div className=" border border-[#E6E6E6] md:p-4">
           <div>
             <img
               src={productimage1}

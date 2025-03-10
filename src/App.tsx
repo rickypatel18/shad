@@ -9,6 +9,10 @@ import CompanyFeature from "./components/common/CompanyFeature";
 import Banner from "./components/common/Banner";
 import BestSellerProductCard from "./components/common/BestSellerProductCard";
 import LatestNews from "./components/common/LatestNews";
+import Testimonial from "./components/common/Testimonial";
+import Carousal from "./components/common/contact/Carousal";
+import Contact from "./components/common/contact/Contact";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -22,7 +26,11 @@ function App() {
       <CompanyFeature />
       <Banner />
       <BestSellerProductCard />
-      <LatestNews/>
+      <LatestNews />
+      <Testimonial />
+      <Carousal />
+      <Contact />
+      <Footer />
     </section>
   );
 }

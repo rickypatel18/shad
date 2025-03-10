@@ -15,7 +15,7 @@ import image6 from "../../../assets/images/categoryimage/soft-drink 1.png"
 import image7 from "../../../assets/images/categoryimage/fruits 1.png"
 import image8 from "../../../assets/images/categoryimage/meat 1.png"
 import image9 from "../../../assets/images/categoryimage/snacks 1.png"
-import { GoArrowRight } from "react-icons/go";
+// import { GoArrowRight } from "react-icons/go";
 
 const items = [
     {
@@ -98,7 +98,7 @@ export function CategoryCarousal() {
                                         />
                                     </div>
                                     <div className="flex flex-col items-center gap-[6px] flex-grow">
-                                        <h3 className="text-[13px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-[500] text-center text-gray-800 group-hover:text-[#2C742F] transition duration-300">
+                                        <h3 className="text-[13px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-[500] text-center  group-hover:text-[#2C742F] transition duration-300">
 
                                             {item.title}
                                         </h3>

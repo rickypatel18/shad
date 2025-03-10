@@ -16,7 +16,7 @@ const CartSection = () => {
             {/* Phone Section */}
             <div className="flex items-center justify-center h-[56px] gap-[8px]">
                 <FiPhoneCall className="h-[24px] w-[24px]" />
-                <p className="hidden xl:block text-[14px] font-[500] leading-none ml-2 text-blackc">
+                <p className="hidden xl:block text-[14px] font-[500] leading-none ml-2 ">
                     (219) 555-0114
                 </p>
             </div>

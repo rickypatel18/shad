@@ -33,7 +33,7 @@ const BestSellerProductCard = () => {
         {/* product-cols-5 */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[5px] md:gap-[10px] lg:gap-[15px] xl:gap-[20px]">
           {/* product card */}
-          <div className="bg-white border border-[#E6E6E6] rounded-[6px] md:p-4">
+          <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4">
             <div>
               <img
                 src={productimage1}
@@ -66,7 +66,7 @@ const BestSellerProductCard = () => {
             </div>
           </div>
 
-          <div className="bg-white border border-[#E6E6E6] rounded-[6px] md:p-4">
+          <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4">
             <div>
               <img
                 src={productimage1}
@@ -98,7 +98,7 @@ const BestSellerProductCard = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white border border-[#E6E6E6] rounded-[6px] md:p-4">
+          <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4">
             <div>
               <img
                 src={productimage1}
@@ -130,7 +130,7 @@ const BestSellerProductCard = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white border border-[#E6E6E6] rounded-[6px] md:p-4">
+          <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4">
             <div>
               <img
                 src={productimage1}
@@ -162,7 +162,7 @@ const BestSellerProductCard = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white border border-[#E6E6E6] rounded-[6px] md:p-4">
+          <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4">
             <div>
               <img
                 src={productimage1}
@@ -202,11 +202,11 @@ const BestSellerProductCard = () => {
 
           <section className="w-full grid grid-cols-1 gap-[16px]">
             <div className=" ">
-              <h4 className="text-[24px] font-[500] text-[#1A1A1A] flex">
+              <h4 className="text-[24px] font-[500] flex">
                 Hot Deals
               </h4>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -231,7 +231,7 @@ const BestSellerProductCard = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -256,7 +256,7 @@ const BestSellerProductCard = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -284,11 +284,11 @@ const BestSellerProductCard = () => {
           </section>
           <section className="w-full grid grid-cols-1 gap-[16px]">
             <div className=" ">
-              <h4 className="text-[24px] font-[500] text-[#1A1A1A] flex">
+              <h4 className="text-[24px] font-[500] flex">
                 Hot Deals
               </h4>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -313,7 +313,7 @@ const BestSellerProductCard = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -338,7 +338,7 @@ const BestSellerProductCard = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -366,11 +366,11 @@ const BestSellerProductCard = () => {
           </section>
           <section className="w-full grid grid-cols-1 gap-[16px]">
             <div className=" ">
-              <h4 className="text-[24px] font-[500] text-[#1A1A1A] flex">
+              <h4 className="text-[24px] font-[500] flex">
                 Hot Deals
               </h4>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -395,7 +395,7 @@ const BestSellerProductCard = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -420,7 +420,7 @@ const BestSellerProductCard = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
+            <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
               <div className="shrink-0">
                 <img
                   src={productimage1}
@@ -457,10 +457,10 @@ const BestSellerProductCard = () => {
               >
                 <div className="flex flex-col gap-[20px] ">
                   <div className="flex flex-col gap-[8px]">
-                    <p className=" text-[10px] md:text-[11px] lg:text-[12px] font-[500] uppercase text-[#1A1A1A]">
-                      HOt Sale
+                    <p className=" text-[10px] md:text-[11px] lg:text-[12px] font-[500] uppercase ">
+                      Hot Sale
                     </p>
-                    <h3 className="text-[22px] md:text-[28px] lg:text-[32px] font-[600] text-[#1A1A1A] leading-none">
+                    <h3 className="text-[22px] md:text-[28px] lg:text-[32px] font-[600] leading-none">
                       Save 37% on Every Order
                     </h3>
                   </div>
@@ -468,9 +468,9 @@ const BestSellerProductCard = () => {
                 <div>
                   <CustomButton
                     text="Shop Now"
-                    bgColor="bg-white"
+                    bgColor=""
                     textColor="text-primary"
-                    hoverTextColor="hover:text-black"
+                    hoverTextColor="hover:text-blackc"
                     hoverBgColor="hover:bg-[#E5E5E5]"
                   >
                     <GoArrowRight className="w-5 h-5 text-primary" />

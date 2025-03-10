@@ -52,7 +52,7 @@ export function HeroCarousel() {
 
   return (
     <section className="w-full overflow-hidden bg-[#F2F2F2] flex justify-center ">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <Carousel
           plugins={[plugin.current]}
           className="relative"
@@ -64,7 +64,7 @@ export function HeroCarousel() {
             {slides.map((slide, index) => (
               <CarouselItem key={index}>
                 <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 items-center ">
-                  <div className="md:col-span-2 lg:col-span-3 flex justify-center p-4">
+                  <div className="md:col-span-2 lg:col-span-3 flex justify-center ">
                     <img
                       src={slide.image}
                       alt={slide.title}
@@ -76,7 +76,7 @@ export function HeroCarousel() {
                     <h6 className="text-primary text-[14px] font-[500] uppercase">
                       {slide.subtitle}
                     </h6>
-                    <h2 className=" text-[40px] md:text-[50px] lg:text-[60px] xl:text-[72px] font-[600] text-blackc leading-none">
+                    <h2 className=" text-[40px] md:text-[50px] lg:text-[60px] xl:text-[72px] font-[600]  leading-none">
                       {slide.title}
                     </h2>
                     <div>

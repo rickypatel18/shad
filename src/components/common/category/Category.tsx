@@ -1,20 +1,12 @@
-
 import { CategoryCarousal } from "./CategoryCarousal";
 import { GoArrowRight } from "react-icons/go";
 
 const Category = () => {
   return (
-    <div
-      className="w-full mx-auto flex justify-center items-center flex-col"
-      style={{
-        backgroundColor: " rgb(255,255,255)",
-        background:
-          "linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(242,242,242,1) 60%)",
-      }}
-    >
+    <div className="w-full mx-auto flex justify-center items-center flex-col bg-gradient-to-t from-white via-white to-[#F2F2F2]">
       {/* for the heading of the category */}
       <div
-        className="w-[100%] lg:w-[80%] flex justify-between items-center "
+        className="w-[100%] lg:w-[80%] flex justify-between items-center"
         style={{ margin: "50px 0px 30px 0px" }}
       >
         <div className="">
@@ -40,7 +32,6 @@ const Category = () => {
           <CategoryCarousal />
         </div>
       </div>
-
     </div>
   );
 };

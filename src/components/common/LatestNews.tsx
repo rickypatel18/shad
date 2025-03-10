@@ -14,7 +14,7 @@ const LatestNews = () => {
       <section className="lg:w-[80%]">
         <div className="flex flex-col justify-center items-center leading-none">
           <p className="text-primary text-[16px] font-[400]">Blog</p>
-          <h3 className="text-[40px] font-[600] text-[#1A1A1A] ">
+          <h3 className="text-[40px] font-[600]  ">
             Latest News
           </h3>
         </div>
@@ -30,7 +30,7 @@ const LatestNews = () => {
               src={img2}
             />
 
-            <div className="absolute top-[240px] left-[30px] bg-white text-black rounded w-13 h-13 flex flex-col items-center justify-center">
+            <div className="absolute top-[240px] left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
               <span className="text-[20px] font-[500] ">23</span>
               <span className="text-[12px] font-[500] text-[#808080]">
                 July
@@ -55,11 +55,11 @@ const LatestNews = () => {
                     <p>65 Comments</p>
                   </div>
                 </div>
-                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500] text-[#1A1A1A] hover:text-[#2C742F]">
+                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500]  hover:text-[#2C742F]">
                   Curabitur porttitor orci eget neque accumsan venenatis.
                 </h4>
               </div>
-              <button className="flex px-38px items-center gap-[15px] bg-[red-500] text-[#00B207]">
+              <button className="flex  items-center gap-[15px] bg-[red-500] text-[#00B207]">
                 <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
                   Read More
                 </p>
@@ -74,7 +74,7 @@ const LatestNews = () => {
               src={img3}
             />
 
-            <div className="absolute top-[240px]  left-[30px] bg-white text-black rounded w-13 h-13 flex flex-col items-center justify-center">
+            <div className="absolute top-[240px]  left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
               <span className="text-[20px] font-[500] ">23</span>
               <span className="text-[12px] font-[500] text-[#808080]">
                 July
@@ -99,11 +99,11 @@ const LatestNews = () => {
                     <p>65 Comments</p>
                   </div>
                 </div>
-                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500] text-[#1A1A1A] hover:text-[#2C742F]">
+                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500]  hover:text-[#2C742F]">
                   Curabitur porttitor orci eget neque accumsan venenatis.
                 </h4>
               </div>
-              <button className="flex px-38px items-center gap-[15px] bg-[red-500] text-[#00B207]">
+              <button className="flex items-center gap-[15px] bg-[red-500] text-[#00B207]">
                 <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
                   Read More
                 </p>
@@ -118,7 +118,7 @@ const LatestNews = () => {
               src={img1}
             />
 
-            <div className="absolute top-[240px]  left-[30px] bg-white text-black rounded w-13 h-13 flex flex-col items-center justify-center">
+            <div className="absolute top-[240px]  left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
               <span className="text-[20px] font-[500] ">23</span>
               <span className="text-[12px] font-[500] text-[#808080]">
                 July
@@ -143,11 +143,11 @@ const LatestNews = () => {
                     <p>65 Comments</p>
                   </div>
                 </div>
-                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500] text-[#1A1A1A] hover:text-[#2C742F]">
+                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500]  hover:text-[#2C742F]">
                   Curabitur porttitor orci eget neque accumsan venenatis.
                 </h4>
               </div>
-              <button className="flex px-38px items-center gap-[15px] bg-[red-500] text-[#00B207]">
+              <button className="flex items-center gap-[15px] bg-[red-500] text-[#00B207]">
                 <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
                   Read More
                 </p>

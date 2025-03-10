@@ -6,7 +6,7 @@ import CustomButton from "../custom/CustomButton";
 
 const FoodStore = () => {
   return (
-    <div className="w-full flex justify-center p-4">
+    <div className="w-full flex justify-center " style={{margin:"70px 0px"}}>
       <div className="w-full lg:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-[60%_40%] gap-[26px]">
         {/* Image Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px]  w-full max-w-full overflow-hidden">

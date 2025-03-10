@@ -13,7 +13,7 @@ const LatestNews = () => {
     >
       <section className="lg:w-[80%]">
         <div className="flex flex-col justify-center items-center leading-none">
-          <p className="text-primary text-[16px] font-[400]">Blog</p>
+          <p className="text-primary text-[16px] font-[400] font-segoe">Blog</p>
           <h3 className="text-[40px] font-[600]  ">
             Latest News
           </h3>

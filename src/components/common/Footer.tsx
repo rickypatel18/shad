@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-[20px] ">
-            <h3 className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+            <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
               My Account
             </h3>
             <ul className="flex flex-col gap-2 leading-none lg:leading-normal">
@@ -103,7 +103,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-[20px] ">
-            <h3 className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+            <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
               Helps
             </h3>
             <ul className="flex flex-col gap-2 leading-none lg:leading-normal">
@@ -141,14 +141,14 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-[20px] ">
-            <h3 className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+          <div className="flex flex-col gap-[20px]">
+            <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500]">
               Helps
             </h3>
             <ul className="flex flex-col gap-2 leading-none lg:leading-normal">
               <li>
                 <a
-                  className="hover:underline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
+                  className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
                   href=""
                 >
                   Contact
@@ -156,7 +156,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
+                  className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
                   href=""
                 >
                   FAQs
@@ -164,7 +164,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
+                  className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
                   href=""
                 >
                   Terms &amp; Condition
@@ -172,7 +172,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
+                  className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]"
                   href=""
                 >
                   Privacy Policy
@@ -180,8 +180,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
           <div className="flex flex-col gap-[20px]  col-span-2">
-            <h3 className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+            <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
               Download Mobile App
             </h3>
 

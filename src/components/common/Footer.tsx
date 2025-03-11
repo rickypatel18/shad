@@ -6,6 +6,14 @@ import cartCard from "../../assets/images/footer/payment/Cart.png";
 import masterCard from "../../assets/images/footer/payment/Method=Mastercard.png";
 import visaCard from "../../assets/images/footer/payment/Method=Visa.png";
 import discoverCard from "../../assets/images/footer/payment/Method=Discover.png";
+import img1 from "../../assets/images/leaf/footer/1 904.png";
+import img2 from "../../assets/images/leaf/footer/Group (3).png";
+import img3 from "../../assets/images/leaf/footer/Group 5.png";
+import img4 from "../../assets/images/leaf/footer/Group 7.png";
+import img5 from "../../assets/images/leaf/footer/Vector (2).png";
+import img6 from "../../assets/images/leaf/footer/Vector (3).png";
+import img7 from "../../assets/images/leaf/footer/Vector (4).png";
+
 import {
   RiFacebookFill,
   RiInstagramLine,
@@ -15,7 +23,53 @@ import {
 
 const Footer = () => {
   return (
-    <div className="  main-footer-section w-full bg-[#1a1a1a] flex justify-center">
+    <div className="  main-footer-section w-full bg-[#1a1a1a] flex justify-center border lg:border lg:border-pink-700 xl:border-blue-700 2xl:border-black">
+      {/* <div className="absolute hidden lg:block lg:left-[0px] lg:top-[0px] xl:left-[0px] xl:top-[0px] 2xl:left-[0px] 2xl:top-[0px] z-[-1] ">
+        <img
+          src={img1}
+          alt=""
+          className="lg:h-[260px] lg:w-[200px] xl:h-[280px] xl:w-[220px] 2xl:h-[300px] 2xl:w-[250px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block lg:left-[30px] lg:bottom-[50px] xl:left-[30px] xl:bottom-[50px] 2xl:left-[30px] 2xl:bottom-[50px]">
+        <img src={img2} alt="" className="h-[120px] w-[120px] " />
+      </div>
+      <div className="absolute hidden lg:block lg:right-[80px] lg:bottom-[0px] xl:right-[80px] xl:bottom-[0px] 2xl:right-[80px] 2xl:bottom-[0px]">
+        <img
+          src={img3}
+          alt=""
+          className="lg:h-[90px] lg:w-[35px] xl:h-[95px] xl:w-[40px] 2xl:h-[100px] 2xl:w-[40px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block  lg:right-[5px] lg:top-[100px] xl:right-[10px] xl:top-[100px] 2xl:right-[20px] 2xl:top-[100px] z-[-1] ">
+        <img
+          src={img4}
+          alt=""
+          className="lg:h-[220px] lg:w-[130px] xl:h-[240px] xl:w-[140px] 2xl:h-[250px] 2xl:w-[150px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block lg:left-[0px] lg:top-[0px] xl:left-[0px] xl:top-[0px] 2xl:left-[0px] 2xl:top-[0px] z-[-1] ">
+        <img
+          src={img5}
+          alt=""
+          className="lg:h-[260px] lg:w-[200px] xl:h-[280px] xl:w-[220px] 2xl:h-[300px] 2xl:w-[250px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block lg:left-[30px] lg:bottom-[50px] xl:left-[30px] xl:bottom-[50px] 2xl:left-[30px] 2xl:bottom-[50px]">
+        <img
+          src={img6}
+          alt=""
+          className="lg:h-[90px] lg:w-[35px] xl:h-[95px] xl:w-[40px] 2xl:h-[100px] 2xl:w-[40px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block lg:right-[80px] lg:bottom-[0px] xl:right-[80px] xl:bottom-[0px] 2xl:right-[80px] 2xl:bottom-[0px]">
+        <img
+          src={img7}
+          alt=""
+          className="lg:h-[90px] lg:w-[35px] xl:h-[95px] xl:w-[40px] 2xl:h-[100px] 2xl:w-[40px]"
+        />
+      </div> */}
+
       <section className=" w-full lg:w-[80%] text-white pt-0 lg:pt-[300px] mx-auto ">
         <div
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7 gap-5 md:gap-10  justify-between"

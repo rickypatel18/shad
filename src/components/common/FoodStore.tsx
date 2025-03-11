@@ -1,23 +1,60 @@
 import image from "../../assets/images/categoryimage/Image.png";
 import image1 from "../../assets/images/categoryimage/Image (1).png";
+import img1 from "../../assets/images/leaf/Vector (2).png";
+import img2 from "../../assets/images/leaf/Vector (3).png";
+import img3 from "../../assets/images/leaf/Image.png";
+import img4 from "../../assets/images/leaf/Group (3).png";
+import img5 from "../../assets/images/leaf/lif.png";
+
 import { IoMdCheckmark } from "react-icons/io";
 import { GoArrowRight } from "react-icons/go";
 import CustomButton from "../custom/CustomButton";
 
 const FoodStore = () => {
   return (
-    <div className="w-full flex justify-center " style={{margin:"70px 0px"}}>
+    <div
+      className="w-full flex justify-center relative z-[5] "
+      style={{ padding: "70px 0px" }}
+    >
+      <div className="absolute hidden lg:block lg:left-[0px] lg:top-[0px] xl:left-[0px] xl:top-[0px] 2xl:left-[0px] 2xl:top-[0px] z-[-1] ">
+        <img
+          src={img4}
+          alt=""
+          className="lg:h-[260px] lg:w-[200px] xl:h-[280px] xl:w-[220px] 2xl:h-[300px] 2xl:w-[250px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block lg:left-[30px] lg:bottom-[50px] xl:left-[30px] xl:bottom-[50px] 2xl:left-[30px] 2xl:bottom-[50px]">
+        <img src={img1} alt="" className="h-[120px] w-[120px] " />
+      </div>
+      <div className="absolute hidden lg:block lg:right-[80px] lg:bottom-[0px] xl:right-[80px] xl:bottom-[0px] 2xl:right-[80px] 2xl:bottom-[0px]">
+        <img
+          src={img5}
+          alt=""
+          className="lg:h-[90px] lg:w-[35px] xl:h-[95px] xl:w-[40px] 2xl:h-[100px] 2xl:w-[40px]"
+        />
+      </div>
+      <div className="absolute hidden lg:block  lg:right-[5px] lg:top-[100px] xl:right-[10px] xl:top-[100px] 2xl:right-[20px] 2xl:top-[100px] z-[-1] ">
+        <img
+          src={img2}
+          alt=""
+          className="lg:h-[220px] lg:w-[130px] xl:h-[240px] xl:w-[140px] 2xl:h-[250px] 2xl:w-[150px]"
+        />
+      </div>
+
       <div className="w-full lg:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-[60%_40%] gap-[26px]">
         {/* Image Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px]  w-full max-w-full overflow-hidden">
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px] overflow-visible  w-full max-w-full  ">
+          <div className="relative overflow-visible  ">
+            <div className="absolute hidden 2xl:block lg:left-[-50px] lg:bottom-[100px] xl:left-[-50px] xl:bottom-[60px] 2xl:left-[-50px] 2xl:bottom-[20px]">
+              <img src={img3} alt="" className="2xl:h-[100px] 2xl:w-[100px]" />
+            </div>
             <img
               src={image}
               alt="Food Image 1"
               className="w-full h-[300px] lg:h-[400px] object-cover rounded-md"
             />
           </div>
-          <div>
+          <div className="">
             <img
               src={image1}
               alt="Food Image 2"
@@ -52,11 +89,9 @@ const FoodStore = () => {
             </div>
           ))}
 
-          <CustomButton
-          text="Shop Now"
-        >
-          <GoArrowRight className="w-5 h-5 text-white" />
-        </CustomButton>
+          <CustomButton text="Shop Now">
+            <GoArrowRight className="w-5 h-5 text-white" />
+          </CustomButton>
         </div>
       </div>
     </div>

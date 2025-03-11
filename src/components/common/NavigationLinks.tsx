@@ -7,6 +7,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation/navigation-menu";
+import { Link } from "react-router-dom";
 
 
 
@@ -20,9 +21,9 @@ export const NavigationLinks: React.FC = () => {
         {links.map((link, index) => (
           <NavigationMenuItem key={index}>
             <NavigationMenuLink asChild>
-              <a href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} className={navigationMenuTriggerStyle()}>
+              <Link to={""} className={navigationMenuTriggerStyle()}>
                 {link}
-              </a>
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         ))}

@@ -1,8 +1,12 @@
-import { useState } from "react";
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import avatar from "../../assets/images/testimonial/Image.png";
 import vector from "../../assets/images/testimonial/Vector.png";
+import img1 from "../../assets/images/leaf/testimonial/3 8.png";
+import img2 from "../../assets/images/leaf/testimonial/Group 12.png";
+import img3 from "../../assets/images/leaf/testimonial/growth-close-up-environmental-lush-natural 6.png";
+
 import { CiStar } from "react-icons/ci";
+import { useState } from "react";
+import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 const testimonials = [
   {
@@ -60,7 +64,6 @@ const Testimonial = () => {
 
   const handleLeftClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex <= 0 ? 0 : prevIndex - 6));
-
   };
 
   const handleRightClick = () => {
@@ -72,8 +75,33 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="w-full flex justify-center bg-gradient-to-t from-[#F2F5F3] via-[#F2F5F3]/44 to-white/70">
-      <div className="w-full lg:w-[80%] mx-auto" style={{ margin: "70px 0px" }}>
+    <div className="w-full flex justify-center bg-gradient-to-t from-[#F2F5F3] via-[#F2F5F3]/44 to-white/70 relative overflow-visible z-[20] ">
+      <div className="absolute hidden lg:block lg:left-[5%] lg:bottom-[-12%] xl:left-[5%] xl:bottom-[-13%] 2xl:left-[5%] 2xl:bottom-[-14%] z-[-1] ">
+        <img
+          src={img1}
+          alt=""
+          className="lg:w-[120px] lg:h-[120px] xl:w-[130px] xl:h-[130px] 2xl:w-[140px] 2xl:h-[140px] "
+        />
+      </div>
+      <div className="absolute hidden lg:block lg:right-[1%] lg:top-[3%]  xl:right-[1%] xl:top-[4%]  2xl:right-[1%] 2xl:top-[5%] z-[-1] ">
+        <img
+          src={img2}
+          alt=""
+          className="lg:w-[85px] lg:h-[185px] xl:w-[90px] xl:h-[190px] 2xl:w-[100px] 2xl:h-[200px] "
+        />
+      </div>
+
+      <div
+        className="w-full lg:w-[80%] mx-auto  relative z-[20]"
+        style={{ margin: "70px 0px" }}
+      >
+        <div className="absolute hidden lg:block  lg:right-[-4%] lg:top-[2%] xl:right-[-4%] xl:top-[2%] 2xl:right-[-3%] 2xl:top-[2%] z-[-1] ">
+          <img
+            src={img3}
+            alt=""
+            className="lg:w-[80px] lg:h-[80px] xl:w-[85px] xl:h-[85px] 2xl:w-[90px] 2xl:h-[90px] "
+          />
+        </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-col leading-tight">
             <h4 className="text-[16px] font-[400] text-[#00B207] font-segoe">
@@ -131,11 +159,7 @@ const Testimonial = () => {
                 </p>
                 <div className="flex justify-between items-center mt-6">
                   <div className="flex items-center gap-[12px]">
-                    <img
-                    src={avatar}
-                      alt=""
-                      className="rounded-full w-12"
-                    />
+                    <img src={avatar} alt="" className="rounded-full w-12" />
                     <div className="flex flex-col">
                       <p className="font-[500] text-[16px]">
                         {testimonial.name}

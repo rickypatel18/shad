@@ -46,24 +46,3 @@ body::-webkit-scrollbar {
   @apply text-[#808080];
 }
 
-.helps-title {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.helps-title::after {
-  content: "";
-  position: absolute;
-  bottom: -4px; /* Adjust spacing below text */
-  left: 0;
-  width: 20px; /* Initially short */
-  height: 2px; /* Border thickness */
-  background-color: #00b207; /* Green color */
-  transition: width 0.3s ease-in-out;
-}
-
-.helps-title:hover::after {
-  width: 100%; /* Expands to full width */
-}

@@ -6,6 +6,7 @@ import cartCard from "../../assets/images/footer/payment/Cart.png";
 import masterCard from "../../assets/images/footer/payment/Method=Mastercard.png";
 import visaCard from "../../assets/images/footer/payment/Method=Visa.png";
 import discoverCard from "../../assets/images/footer/payment/Method=Discover.png";
+import "../../assets/css/footer.css"
 import img1 from "../../assets/images/leaf/footer/1 904.png";
 import img2 from "../../assets/images/leaf/footer/Group (3).png";
 import img3 from "../../assets/images/leaf/footer/Group 5.png";

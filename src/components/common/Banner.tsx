@@ -12,9 +12,7 @@ import CustomButton from "../custom/CustomButton";
 
 const Banner = () => {
   return (
-    <div
-      className="w-full flex justify-center  relative overflow-hidden "
-    >
+    <div className="w-full flex justify-center  relative overflow-hidden ">
       <div
         className=" w-[100%]  sm:w-[80%] md:w-[100%] lg:w-[90%] xl:w-[80%]   "
         style={{ padding: "70px 0px" }}
@@ -42,7 +40,7 @@ const Banner = () => {
         </div>
         <section className="main-banner-section grid grid-cols-1 md:grid-cols-2 gap-[24px] z-30 ">
           <div
-            className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center"
+            className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center rounded-[10px]"
             style={{ backgroundImage: `url(${img1})` }}
           >
             <div
@@ -80,7 +78,7 @@ const Banner = () => {
           </div>
 
           <div
-            className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center"
+            className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center rounded-[10px]"
             style={{ backgroundImage: `url(${img2})` }}
           >
             <div

@@ -3,7 +3,7 @@ import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { LuSearch } from "react-icons/lu";
 import { HiMenu, HiOutlineShoppingBag, HiX } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
-import "../../js/search.js"
+import "../../assets/js/search.js"
 const CartSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 

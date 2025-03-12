@@ -77,7 +77,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div
+          <div  
             className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center rounded-[10px]"
             style={{ backgroundImage: `url(${img2})` }}
           >

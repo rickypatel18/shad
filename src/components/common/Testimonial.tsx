@@ -22,37 +22,37 @@ const testimonials = [
     avatar: avatar,
   },
   {
-    text: "Donec sed neque eget.",
+    text: "Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales.",
     name: "John Smith",
     role: "Customer3",
     avatar: avatar,
   },
   {
-    text: "New testimonial text here.",
+    text: "Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales.",
     name: "Alice Johnson",
     role: "Customer4",
     avatar: avatar,
   },
   {
-    text: "Another testimonial text here.",
+    text: "Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales.",
     name: "Bob Brown",
     role: "Customer5",
     avatar: avatar,
   },
   {
-    text: "Donec sed neque eget.",
+    text: "Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales.",
     name: "John Smith",
     role: "Customer6",
     avatar: avatar,
   },
   {
-    text: "New testimonial text here.",
+    text: "Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales.",
     name: "Alice Johnson",
     role: "Customer7",
     avatar: avatar,
   },
   {
-    text: "Another testimonial text here.",
+    text: "Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales.",
     name: "Bob Brown",
     role: "Customer8",
     avatar: avatar,
@@ -75,10 +75,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div
-      className="w-full flex justify-center bg-gradient-to-t from-[#F2F5F3] via-[#F2F5F3]/44 to-white/70 relative overflow-visible z-[20] "
-      
-    >
+    <div className="w-full flex justify-center bg-gradient-to-t from-[#F2F5F3] via-[#F2F5F3]/44 to-white/70 relative overflow-visible z-[20] ">
       <div className="absolute hidden lg:block lg:left-[5%] lg:bottom-[-12%] xl:left-[5%] xl:bottom-[-13%] 2xl:left-[5%] 2xl:bottom-[-14%] z-[-1] ">
         <img
           src={img1}

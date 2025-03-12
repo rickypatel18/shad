@@ -7,11 +7,11 @@ import inc_h from "../../../assets/images/incomplete/incomplete-hovered.png";
 const FeatureCard = () => {
   return (
     <section className="feature-section w-full mx-auto ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  gap-[24px] justify-center items-stretch text-center  shadow-[0px_0.5px_0px_#CCCCCC]">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-[24px] justify-center items-stretch text-center shadow-[0px_0.5px_0px_#CCCCCC]">
         {/* <!-- Feature Card --> */}
 
         <div
-          className="group flex flex-col items-center text-center gap-[16px] h-full "
+          className="group flex flex-col items-center text-center gap-[16px] h-full feature-card-hover"
           style={{ padding: "40px" }}
         >
           {/* Image Container */}
@@ -42,7 +42,7 @@ const FeatureCard = () => {
         </div>
 
         <div
-          className="group flex flex-col items-center text-center gap-[16px] h-full "
+          className="group flex flex-col items-center text-center gap-[16px] h-full feature-card-hover"
           style={{ padding: "40px" }}
         >
           <div className="relative flex justify-center items-center  w-[80px] h-[90px]  mb-2">
@@ -69,7 +69,7 @@ const FeatureCard = () => {
         </div>
 
         <div
-          className="group flex flex-col text-center items-center  gap-[16px] "
+          className="group flex flex-col text-center items-center  gap-[16px] feature-card-hover"
           style={{ padding: "40px" }}
         >
           <div className="relative flex justify-center items-center  w-[80px] h-[90px]  mb-2">
@@ -96,7 +96,7 @@ const FeatureCard = () => {
         </div>
 
         <div
-          className="group flex flex-col items-center text-center gap-[16px] h-full "
+          className="group flex flex-col items-center text-center gap-[16px] h-full feature-card-hover"
           style={{ padding: "40px" }}
         >
           <div className="relative flex justify-center items-center  w-[80px] h-[90px]  mb-2">

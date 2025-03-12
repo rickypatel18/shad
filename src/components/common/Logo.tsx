@@ -7,10 +7,10 @@ const Logo = () => {
         <img
           src={logo}
           alt="logo"
-          className="w-[28px] h-[28px] md:w-[32px] md:h-[32px]"
+          className="w-[28px] h-[28px] md:w-[28px] md:h-[28px] lg:w-[32px] lg:h-[32px]"
         />
 
-        <h2 className="text-[20px] md:text-[32px] font-[500] ">Ecobazar</h2>
+        <h2 className="text-[20px] md:text-[27px] lg:text-[30px] xl:text-[32px] font-[500] ">Ecobazar</h2>
       </div>
     </section>
   );

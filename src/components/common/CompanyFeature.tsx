@@ -30,7 +30,7 @@ const CompanyFeature = () => {
           className="lg:w-[100px] lg:h-[100px] xl:w-[110px] xl:h-[110px] 2xl:w-[120px] 2xl:h-[120px] "
         />
       </div>
-      <section className="main-company-feature-section w-[80%] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[24px] z-10">
+      <section className="main-company-feature-section w-full lg:w-[80%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-[24px] z-10">
         {[
           { count: "37+", text: "Years of Hard Work" },
           { count: "500k+", text: "Happy Customers" },
@@ -41,13 +41,13 @@ const CompanyFeature = () => {
             key={index}
             className=" bg-white/10 rounded-[8px] w-full flex flex-col justify-center items-center"
             style={{
-              padding: "30px 30px",
+              padding: " 28px",
             }}
           >
-            <h4 className=" text-[26px] sm:text-[36px] md:text-[46px] lg:text-[56px] font-[300] text-[#00B207]">
+            <h4 className=" text-[26px] sm:text-[36px] md:text-[46px] lg:text-[52px] xl:text-[56px] font-[300] text-[#00B207]">
               {item.count}
             </h4>
-            <p className="text-[13px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-[400] text-[#FFFFFF]">
+            <p className="text-[13px] sm:text-[14px] md:text-[16px] lg:text-[17px] xl:text-[18px] font-[400] text-[#FFFFFF]">
               {item.text}
             </p>
           </div>

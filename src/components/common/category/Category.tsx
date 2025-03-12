@@ -6,7 +6,7 @@ import img3 from "../../../assets/images/leaf/1 903.png";
 
 const Category = () => {
   return (
-    <div className="w-full mx-auto flex justify-center items-center flex-col bg-gradient-to-t from-white via-white to-[#F2F2F2] relative z-[10]">
+    <div className="w-full mx-auto flex justify-center items-center flex-col bg-gradient-to-t from-white via-white to-[#F2F2F2] relative z-[10] ">
       <div className="absolute hidden lg:block top-[-25px] lg:left-[80px] xl:left-[90px]  2xl:left-[120px] z-[50]">
         <img
           src={img1}

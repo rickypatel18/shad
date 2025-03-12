@@ -13,7 +13,7 @@ import CustomButton from "../custom/CustomButton";
 const FoodStore = () => {
   return (
     <div
-      className="w-full flex justify-center relative z-[5] "
+      className="w-full flex justify-center relative z-[5]"
       style={{ padding: "70px 0px" }}
     >
       <div className="absolute hidden lg:block lg:left-[0px] lg:top-[0px] xl:left-[0px] xl:top-[0px] 2xl:left-[0px] 2xl:top-[0px] z-[-1] ">
@@ -41,7 +41,7 @@ const FoodStore = () => {
         />
       </div>
 
-      <div className="w-full lg:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-[60%_40%] gap-[26px]">
+      <div className="w-full lg:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-[60%_40%]  lg:grid-cols-[60%_40%] gap-[18px] md:gap-[20px] lg:gap-[23px] xl:gap-[26px] ">
         {/* Image Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px] overflow-visible  w-full max-w-full  ">
           <div className="relative overflow-visible  ">
@@ -51,14 +51,14 @@ const FoodStore = () => {
             <img
               src={image}
               alt="Food Image 1"
-              className="w-full h-[300px] lg:h-[400px] object-cover rounded-md"
+              className="w-full h-[350px] lg:h-[400px] object-cover rounded-md"
             />
           </div>
           <div className="">
             <img
               src={image1}
               alt="Food Image 2"
-              className="w-full h-[300px] lg:h-[457px] object-cover rounded-md"
+              className="w-full h-[350px] lg:h-[457px] object-cover rounded-md"
             />
           </div>
         </div>

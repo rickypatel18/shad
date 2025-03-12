@@ -75,12 +75,15 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="w-full flex justify-center bg-gradient-to-t from-[#F2F5F3] via-[#F2F5F3]/44 to-white/70 relative overflow-visible z-[20] ">
+    <div
+      className="w-full flex justify-center bg-gradient-to-t from-[#F2F5F3] via-[#F2F5F3]/44 to-white/70 relative overflow-visible z-[20] "
+      
+    >
       <div className="absolute hidden lg:block lg:left-[5%] lg:bottom-[-12%] xl:left-[5%] xl:bottom-[-13%] 2xl:left-[5%] 2xl:bottom-[-14%] z-[-1] ">
         <img
           src={img1}
           alt=""
-          className="lg:w-[120px] lg:h-[120px] xl:w-[130px] xl:h-[130px] 2xl:w-[140px] 2xl:h-[140px] "
+          className="lg:w-[100px] lg:h-[100px] xl:w-[110px] xl:h-[110px] 2xl:w-[120px] 2xl:h-[120px] "
         />
       </div>
       <div className="absolute hidden lg:block lg:right-[1%] lg:top-[3%]  xl:right-[1%] xl:top-[4%]  2xl:right-[1%] 2xl:top-[5%] z-[-1] ">
@@ -95,13 +98,6 @@ const Testimonial = () => {
         className="w-full lg:w-[80%] mx-auto  relative z-[20]"
         style={{ margin: "70px 0px" }}
       >
-        <div className="absolute hidden lg:block  lg:right-[-4%] lg:top-[2%] xl:right-[-4%] xl:top-[2%] 2xl:right-[-3%] 2xl:top-[2%] z-[-1] ">
-          <img
-            src={img3}
-            alt=""
-            className="lg:w-[80px] lg:h-[80px] xl:w-[85px] xl:h-[85px] 2xl:w-[90px] 2xl:h-[90px] "
-          />
-        </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-col leading-tight">
             <h4 className="text-[16px] font-[400] text-[#00B207] font-segoe">
@@ -139,46 +135,58 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-          {testimonials
-            .slice(currentIndex, currentIndex + 3)
-            .map((testimonial, index) => (
-              <div
-                className="flex flex-col bg-white rounded-[8px] gap-[16px]"
-                key={index}
-                style={{
-                  boxShadow: "0px 10px 20px 0px #00000003",
-                  padding: "24px",
-                }}
-              >
-                <div className="text-start">
-                  <img src={vector} alt="" className="" />
-                </div>
-                <p className="text-[14px] font-[400] text-[#4D4D4D] text-start">
-                  {testimonial.text}
-                </p>
-                <div className="flex justify-between items-center mt-6">
-                  <div className="flex items-center gap-[12px]">
-                    <img src={avatar} alt="" className="rounded-full w-12" />
-                    <div className="flex flex-col">
-                      <p className="font-[500] text-[16px]">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-[14px] font-[400] text-[#999999]">
-                        {testimonial.role}
-                      </p>
+        <div
+          className="w-full flex justify-center  relative z-[20]"
+          style={{ marginTop: "40px" }}
+        >
+          <div className="absolute hidden lg:block  lg:right-[-5%] lg:top-[-10%] xl:right-[-4%] xl:top-[-25%] 2xl:right-[-3%] 2xl:top-[-25%] z-[-1] ">
+            <img
+              src={img3}
+              alt=""
+              className="lg:w-[80px] lg:h-[80px] xl:w-[85px] xl:h-[85px] 2xl:w-[90px] 2xl:h-[90px] "
+            />
+          </div>
+          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-[24px] ">
+            {testimonials
+              .slice(currentIndex, currentIndex + 3)
+              .map((testimonial, index) => (
+                <div
+                  className="flex flex-col bg-white rounded-[8px] gap-[16px]"
+                  key={index}
+                  style={{
+                    boxShadow: "0px 10px 20px 0px #00000003",
+                    padding: "24px",
+                  }}
+                >
+                  <div className="text-start">
+                    <img src={vector} alt="" className="" />
+                  </div>
+                  <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D] text-start">
+                    {testimonial.text}
+                  </p>
+                  <div className="flex justify-between items-center mt-6">
+                    <div className="flex items-center gap-[12px]">
+                      <img src={avatar} alt="" className="rounded-full w-12" />
+                      <div className="flex flex-col">
+                        <p className="font-[500] text-[14px] md:text-[15px] lg:text-[16px]">
+                          {testimonial.name}
+                        </p>
+                        <p className="text-[12px] md:text-[13px] lg:text-[14px] font-[400] text-[#999999]">
+                          {testimonial.role}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex">
+                      <CiStar className="w-[20px] h-[20px]" />
+                      <CiStar className="w-[20px] h-[20px]" />
+                      <CiStar className="w-[20px] h-[20px]" />
+                      <CiStar className="w-[20px] h-[20px]" />
+                      <CiStar className="w-[20px] h-[20px]" />
                     </div>
                   </div>
-                  <div className="flex">
-                    <CiStar className="w-[20px] h-[20px]" />
-                    <CiStar className="w-[20px] h-[20px]" />
-                    <CiStar className="w-[20px] h-[20px]" />
-                    <CiStar className="w-[20px] h-[20px]" />
-                    <CiStar className="w-[20px] h-[20px]" />
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+          </div>
         </div>
       </div>
     </div>

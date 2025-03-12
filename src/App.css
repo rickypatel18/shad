@@ -23,13 +23,19 @@ body::-webkit-scrollbar {
   scroll-behavior: smooth;
   width: none;
 }
-.carousal::-webkit-scrollbar {
-  display: none;
-}
 .font-segoe {
   font-family: "Segoe Script", serif !important;
 }
 
+/* for carousal in carousal file */
+.carousal::-webkit-scrollbar {
+  display: none;
+}
+.carousal {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* for text */
 .text-primary {
   @apply text-[#00B207];
 }
@@ -46,3 +52,7 @@ body::-webkit-scrollbar {
   @apply text-[#808080];
 }
 
+/* New hover effect for FeatureCard */
+.feature-card-hover:hover {
+    border-bottom: 2px solid #00B207; /* Adjust color and thickness as needed */
+}

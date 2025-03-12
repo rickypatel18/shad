@@ -9,7 +9,9 @@ import img_1 from "../../../assets/images/leaf/Group 4-contact.png";
 
 const Carousal = () => {
   return (
-    <div className="w-full flex justify-center relative z-[20]  overflow-hidden">
+    <div
+      className="w-full flex justify-center relative z-[20]  overflow-hidden "
+    >
       <div className="absolute hidden lg:block lg:right-[-15px] lg:top-[-15px] xl:right-[-15px] xl:top-[-15px] 2xl:right-[0px] 2xl:top-[-15px] z-[-1] ">
         <img
           src={img_1}
@@ -17,9 +19,9 @@ const Carousal = () => {
           className="lg:h-[130px] lg:w-[130px] xl:h-[140px] xl:w-[140px] 2xl:h-[150px] 2xl:w-[150px] "
         />
       </div>
-      <div className="overflow-x-auto carousal whitespace-nowrap  w-[100%] lg:w-[80%] ">
+      <div className="overflow-x-auto carousal whitespace-nowrap w-[100%] lg:w-[80%] ">
         <div
-          className="flex items-center justify-between gap-5 "
+          className="flex items-center justify-between gap-8 lg:gap-10 "
           style={{ padding: "70px 0px" }}
         >
           {/* <!-- Image 1 --> */}

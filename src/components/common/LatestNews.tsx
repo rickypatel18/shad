@@ -23,8 +23,8 @@ import { GoArrowRight, GoComment } from "react-icons/go";
 const LatestNews = () => {
   return (
     <section
-      className="w-[100%]  bg-[#F2F2F2] flex justify-center  z-[20] relative overflow-hidden"
-      style={{ padding: "70px 0px" }}
+      className="w-[100%]  bg-[#F2F2F2] flex justify-center  z-[20] relative overflow-hidden "
+      style={{ padding: "70px 0px"}}
     >
       <div className="absolute hidden lg:block lg:left-[100px] lg:top-[0px] xl:left-[120px] 2xl:left-[150px] z-[-1] ">
         <img
@@ -125,7 +125,7 @@ const LatestNews = () => {
         </div>
 
         <section
-          className="latest-news-cards-section  grid grid-cols-1 md:grid-cols-3 gap-8 "
+          className="latest-news-cards-section  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-5 lg:gap-7 xl:gap-8 "
           style={{ marginTop: "40px" }}
         >
           <div className="bg-white rounded-[8px] relative">
@@ -136,7 +136,9 @@ const LatestNews = () => {
             />
 
             <div className="absolute top-[240px] left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
-              <span className="text-[20px] font-[500] ">23</span>
+              <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] ">
+                23
+              </span>
               <span className="text-[12px] font-[500] text-[#808080]">
                 July
               </span>
@@ -147,15 +149,15 @@ const LatestNews = () => {
             >
               <div className="flex flex-col gap-[8px]">
                 <div className="flex flex-wrap gap-[16px]">
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px]  text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>By Admin</p>
                   </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>Food</p>
                   </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>65 Comments</p>
                   </div>
@@ -180,7 +182,9 @@ const LatestNews = () => {
             />
 
             <div className="absolute top-[240px]  left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
-              <span className="text-[20px] font-[500] ">23</span>
+              <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] ">
+                23
+              </span>
               <span className="text-[12px] font-[500] text-[#808080]">
                 July
               </span>
@@ -191,15 +195,15 @@ const LatestNews = () => {
             >
               <div className="flex flex-col gap-[8px]">
                 <div className="flex flex-wrap gap-[16px]">
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>By Admin</p>
                   </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>Food</p>
                   </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>65 Comments</p>
                   </div>
@@ -224,7 +228,9 @@ const LatestNews = () => {
             />
 
             <div className="absolute top-[240px]  left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
-              <span className="text-[20px] font-[500] ">23</span>
+              <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] ">
+                23
+              </span>
               <span className="text-[12px] font-[500] text-[#808080]">
                 July
               </span>
@@ -235,15 +241,15 @@ const LatestNews = () => {
             >
               <div className="flex flex-col gap-[8px]">
                 <div className="flex flex-wrap gap-[16px]">
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>By Admin</p>
                   </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>Food</p>
                   </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[14px] font-[400] text-[#4D4D4D]">
+                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
                     <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
                     <p>65 Comments</p>
                   </div>

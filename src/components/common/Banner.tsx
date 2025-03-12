@@ -12,9 +12,11 @@ import CustomButton from "../custom/CustomButton";
 
 const Banner = () => {
   return (
-    <div className="w-full flex justify-center  relative overflow-hidden">
+    <div
+      className="w-full flex justify-center  relative overflow-hidden "
+    >
       <div
-        className=" w-[90%] sm:w-[80%] md:w-[100%] lg:w-[90%] xl:w-[80%]   "
+        className=" w-[100%]  sm:w-[80%] md:w-[100%] lg:w-[90%] xl:w-[80%]   "
         style={{ padding: "70px 0px" }}
       >
         <div className="absolute hidden lg:block lg:right-[10px] lg:bottom-[10px] xl:right-[30px] xl:bottom-[10px] 2xl:right-[40px] 2xl:bottom-[10px] z-[-1]">
@@ -40,12 +42,12 @@ const Banner = () => {
         </div>
         <section className="main-banner-section grid grid-cols-1 md:grid-cols-2 gap-[24px] z-30 ">
           <div
-            className="w-full h-[250px] md:h-[280px] lg:h-[310px] xl:h-[340px] bg-cover bg-center bg-no-repeat flex items-center"
+            className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center"
             style={{ backgroundImage: `url(${img1})` }}
           >
             <div
-              className="flex flex-col gap-[24px] "
-              style={{ paddingLeft: "40px" }}
+              className="flex flex-col gap-[10px] md:gap-[24px] "
+              style={{ paddingLeft: "20px" }}
             >
               <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[8px]">
@@ -78,12 +80,12 @@ const Banner = () => {
           </div>
 
           <div
-            className="w-full h-[250px] md:h-[280px] lg:h-[310px] xl:h-[340px] bg-cover bg-center bg-no-repeat flex items-center"
+            className="w-full min-h-[230px] sm:h-[250px] md:h-[250px] lg:h-[280px] xl:h-[300px] 2xl:h-[330px] bg-cover bg-center bg-no-repeat flex items-center"
             style={{ backgroundImage: `url(${img2})` }}
           >
             <div
-              className="flex flex-col gap-[24px] "
-              style={{ paddingLeft: "40px" }}
+              className="flex flex-col gap-[10px] md:gap-[24px]  "
+              style={{ paddingLeft: "20px" }}
             >
               <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[8px]">
@@ -95,8 +97,8 @@ const Banner = () => {
                   </p>
                 </div>
                 <div className="flex gap-[8px]">
-                  <div className="flex w-full justify-start gap-[8px]">
-                    <div className="w-[40px] h-[40px]  flex flex-col items-center justify-center">
+                  <div className="flex w-full justify-start gap-[5px] md:gap-[8px]">
+                    <div className="w-[40px] h-[40px] flex flex-col items-center justify-center">
                       <p className="text-[16px] md:text-[18px] lg:text-[20px] font-[400] text-white">
                         03
                       </p>

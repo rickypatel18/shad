@@ -4,6 +4,13 @@ import img2 from "../../assets/images/leaf/Group 8.png";
 import img3 from "../../assets/images/leaf/Group (4).png";
 
 const CompanyFeature = () => {
+  const features = [
+    { count: "37+", text: "Years of Hard Work" },
+    { count: "500k+", text: "Happy Customers" },
+    { count: "28", text: "Qualified Team Members" },
+    { count: "750k+", text: "Monthly Orders" },
+  ];
+
   return (
     <section
       className="w-full flex justify-center bg-cover bg-center bg-no-repeat relative  z-[-5]"
@@ -21,7 +28,7 @@ const CompanyFeature = () => {
           src={img2}
           alt=""
           className="lg:w-[70px] lg:h-[180px] xl:w-[80px] xl:h-[190px] 2xl:w-[90px] 2xl:h-[200px] "
-        />  
+        />
       </div>
       <div className="absolute hidden lg:block lg:right-[50px] lg:bottom-[-20px] xl:right-[50px] xl:bottom-[-23px] 2xl:right-[50px] 2xl:bottom-[-25px] z-[-1]">
         <img
@@ -31,12 +38,7 @@ const CompanyFeature = () => {
         />
       </div>
       <section className="main-company-feature-section w-full lg:w-[80%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-[24px] z-10">
-        {[
-          { count: "37+", text: "Years of Hard Work" },
-          { count: "500k+", text: "Happy Customers" },
-          { count: "28", text: "Qualified Team Members" },
-          { count: "750k+", text: "Monthly Orders" },
-        ].map((item, index) => (
+        {features.map((item, index) => (
           <div
             key={index}
             className=" bg-white/10 rounded-[8px] w-full flex flex-col justify-center items-center"

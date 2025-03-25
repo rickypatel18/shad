@@ -11,40 +11,93 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { GoArrowRight } from "react-icons/go";
 import CustomButton from "../custom/CustomButton";
 
+const products = [
+  {
+    id: 1,
+    name: "Green Apple",
+    price: "$14.99",
+    image: productimage1, // Replace with actual image URL or import
+  },
+  {
+    id: 2,
+    name: "Red Apple",
+    price: "$12.99",
+    image: productimage1,
+  },
+  {
+    id: 3,
+    name: "Banana",
+    price: "$9.99",
+    image: productimage1,
+  },
+  {
+    id: 4,
+    name: "Grapes",
+    price: "$16.99",
+    image: productimage1,
+  },
+  {
+    id: 5,
+    name: "Grapes",
+    price: "$16.99",
+    image: productimage1,
+  },
+];
+const dealsProducts = [
+  {
+    id: 1,
+    name: "Green Apple",
+    price: "$14.99",
+    image: productimage1, // Replace with actual image URL or import
+  },
+  {
+    id: 2,
+    name: "Red Apple",
+    price: "$12.99",
+    image: productimage1,
+  },
+  {
+    id: 3,
+    name: "Banana",
+    price: "$9.99",
+    image: productimage1,
+  },
+];
+
 const BestSellerProductCard = () => {
   return (
-    <section
-      className="w-full flex justify-center relative "
-    >
-      <div className="absolute hidden lg:block lg:left-[0px] lg:top-[50%] xl:left-[0px] xl:top-[50%] 2xl:left-[0px] 2xl:top-[50%]">
-        <img
-          src={img1}
-          alt=""
-          className="lg:w-[80px] lg:h-[140px] xl:w-[90px] xl:h-[150px] 2xl:w-[100px] 2xl:h-[160px] "
-        />
-      </div>
-      <div className="absolute hidden lg:block lg:left-[50px] lg:top-[60%] xl:left-[60px] xl:top-[60%] 2xl:left-[80px] 2xl:top-[60%]">
-        <img
-          src={img2}
-          alt=""
-          className="lg:w-[70px] lg:h-[70px] xl:w-[80px] xl:h-[80px] 2xl:w-[90px] 2xl:h-[90px] "
-        />
-      </div>
+    <section className="w-full flex justify-center relative ">
+      <section className="absolute-section">
+        <div className="absolute hidden lg:block lg:left-[0px] lg:top-[50%] xl:left-[0px] xl:top-[50%] 2xl:left-[0px] 2xl:top-[50%]">
+          <img
+            src={img1}
+            alt=""
+            className="lg:w-[80px] lg:h-[140px] xl:w-[90px] xl:h-[150px] 2xl:w-[100px] 2xl:h-[160px] "
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:left-[50px] lg:top-[60%] xl:left-[60px] xl:top-[60%] 2xl:left-[80px] 2xl:top-[60%]">
+          <img
+            src={img2}
+            alt=""
+            className="lg:w-[70px] lg:h-[70px] xl:w-[80px] xl:h-[80px] 2xl:w-[90px] 2xl:h-[90px] "
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:left-[-20px] lg:top-[10px] xl:left-[-20px] xl:top-[20px] 2xl:left-[-20px] 2xl:top-[0px]">
+          <img
+            src={img4}
+            alt=""
+            className="lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[170px] 2xl:h-[170px] "
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:right-[0px] lg:top-[50%] xl:right-[0px] xl:top-[50%] 2xl:right-[0px] 2xl:top-[50%]">
+          <img
+            src={img5}
+            alt=""
+            className="lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px] 2xl:w-[140px] 2xl:h-[140px] "
+          />
+        </div>
+      </section>
 
-      <div className="absolute hidden lg:block lg:left-[-20px] lg:top-[10px] xl:left-[-20px] xl:top-[20px] 2xl:left-[-20px] 2xl:top-[0px]">
-        <img
-          src={img4}
-          alt=""
-          className="lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[170px] 2xl:h-[170px] "
-        />
-      </div>
-      <div className="absolute hidden lg:block lg:right-[0px] lg:top-[50%] xl:right-[0px] xl:top-[50%] 2xl:right-[0px] 2xl:top-[50%]">
-        <img
-          src={img5}
-          alt=""
-          className="lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px] 2xl:w-[140px] 2xl:h-[140px] "
-        />
-      </div>
       <section
         className="main-bestseller-product-section w-[100%] lg:w-[80%] justify-center mx-auto "
         style={{ paddingBottom: "70px" }}
@@ -71,411 +124,149 @@ const BestSellerProductCard = () => {
           {/* product-cols-5 */}
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[5px] md:gap-[10px] lg:gap-[14px] xl:gap-[18px] 2xl:gap-[20px]">
             {/* product card */}
-            <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4 ">
-              <div className="">
-                <img
-                  src={productimage1}
-                  alt="Product"
-                  className="w-[400px] h-[240px] lg:w-[400px] lg:h-[260px] xl:w-[400px] xl:h-[280px] 2xl:w-[400px] 2xl:h-[300px] object-contain rounded-lg"
-                />
-              </div>
+            {products.map((product) => (
               <div
-                className="flex justify-between w-[100%] items-center"
-                style={{ padding: "15px" }}
+                key={product.id}
+                className="border border-[#E6E6E6] rounded-[6px] md:p-4 hover:border-[#2C742F] hover:shadow-[0px_0px_12px_0px_#20B52652] transition-shadow duration-300"
               >
-                <div className="flex flex-col items-start justify-center">
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex ">
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
+                <div>
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-[400px] h-[240px] lg:w-[400px] lg:h-[260px] xl:w-[400px] xl:h-[280px] 2xl:w-[400px] 2xl:h-[300px] object-contain rounded-lg"
+                  />
+                </div>
+                <div
+                  className="flex justify-between w-[100%] items-center"
+                  style={{ padding: "15px" }}
+                >
+                  <div className="flex flex-col items-start justify-center">
+                    <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
+                      {product.name}
+                    </p>
+                    <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
+                      {product.price}
+                    </p>
+                    <div className="flex">
+                      <CiStar />
+                      <CiStar />
+                      <CiStar />
+                      <CiStar />
+                      <CiStar />
+                    </div>
+                  </div>
+                  <div className="flex w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] bg-[#f2f2f2] items-center justify-center rounded-full">
+                    <HiOutlineShoppingBag className="w-[19px] h-[19px] md:w-[25px] md:h-[25px]" />
                   </div>
                 </div>
-                <div className="flex w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] bg-[#f2f2f2] items-center justify-center rounded-full">
-                  <HiOutlineShoppingBag className="w-[19px] h-[19px]  md:w-[25px] md:h-[25px]" />
-                </div>
               </div>
-            </div>
-            <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4 ">
-              <div className="">
-                <img
-                  src={productimage1}
-                  alt="Product"
-                  className="w-[400px] h-[240px] lg:w-[400px] lg:h-[260px] xl:w-[400px] xl:h-[280px] 2xl:w-[400px] 2xl:h-[300px] object-contain rounded-lg"
-                />
-              </div>
-              <div
-                className="flex justify-between w-[100%] items-center"
-                style={{ padding: "15px" }}
-              >
-                <div className="flex flex-col items-start justify-center">
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex ">
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                  </div>
-                </div>
-                <div className="flex w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] bg-[#f2f2f2] items-center justify-center rounded-full">
-                  <HiOutlineShoppingBag className="w-[19px] h-[19px] sm:w-[25px] sm:h-[25px] md:w-[25px] md:h-[25px]" />
-                </div>
-              </div>
-            </div>
-            <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4 ">
-              <div className="">
-                <img
-                  src={productimage1}
-                  alt="Product"
-                  className="w-[400px] h-[240px] lg:w-[400px] lg:h-[260px] xl:w-[400px] xl:h-[280px] 2xl:w-[400px] 2xl:h-[300px] object-contain rounded-lg"
-                />
-              </div>
-              <div
-                className="flex justify-between w-[100%] items-center"
-                style={{ padding: "15px" }}
-              >
-                <div className="flex flex-col items-start justify-center">
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex ">
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                  </div>
-                </div>
-                <div className="flex w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] bg-[#f2f2f2] items-center justify-center rounded-full">
-                  <HiOutlineShoppingBag className="w-[19px] h-[19px] sm:w-[25px] sm:h-[25px] md:w-[25px] md:h-[25px]" />
-                </div>
-              </div>
-            </div>
-            <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4 ">
-              <div className="">
-                <img
-                  src={productimage1}
-                  alt="Product"
-                  className="w-[400px] h-[240px] lg:w-[400px] lg:h-[260px] xl:w-[400px] xl:h-[280px] 2xl:w-[400px] 2xl:h-[300px] object-contain rounded-lg"
-                />
-              </div>
-              <div
-                className="flex justify-between w-[100%] items-center"
-                style={{ padding: "15px" }}
-              >
-                <div className="flex flex-col items-start justify-center">
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex ">
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                  </div>
-                </div>
-                <div className="flex w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] bg-[#f2f2f2] items-center justify-center rounded-full">
-                  <HiOutlineShoppingBag className="w-[19px] h-[19px] sm:w-[25px] sm:h-[25px] md:w-[25px] md:h-[25px]" />
-                </div>
-              </div>
-            </div>
-            <div className=" border border-[#E6E6E6] rounded-[6px] md:p-4 ">
-              <div className="">
-                <img
-                  src={productimage1}
-                  alt="Product"
-                  className="w-[400px] h-[240px] lg:w-[400px] lg:h-[260px] xl:w-[400px] xl:h-[280px] 2xl:w-[400px] 2xl:h-[300px] object-contain rounded-lg"
-                />
-              </div>
-              <div
-                className="flex justify-between w-[100%] items-center"
-                style={{ padding: "15px" }}
-              >
-                <div className="flex flex-col items-start justify-center">
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex ">
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                  </div>
-                </div>
-                <div className="flex w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] md:w-[50px] md:h-[50px] bg-[#f2f2f2] items-center justify-center rounded-full">
-                  <HiOutlineShoppingBag className="w-[19px] h-[19px] sm:w-[25px] sm:h-[25px] md:w-[25px] md:h-[25px]" />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* cols-4 */}
           <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-[5px] md:gap-[10px] lg:gap-[15px] xl:gap-[22px] 2xl:gap-[24px]">
             {/* product card */}
-
             <section className="w-full sm:w-full grid grid-cols-1 gap-[16px]">
-              <div className=" ">
+              <div>
                 <h4 className="text-[24px] font-[500] flex">Hot Deals</h4>
               </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
+              {dealsProducts.map((deal) => (
                 <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
+                  key={deal.id}
+                  className="flex border border-[#E6E6E6] rounded-[6px] w-full items-center hover:border-[#2C742F] hover:shadow-[0px_0px_12px_0px_#20B52652] transition-shadow duration-300"
                 >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
+                  <div className="shrink-0">
+                    <img
+                      src={deal.image}
+                      alt={deal.name}
+                      className="w-[100px] h-[100px] object-cover rounded-lg"
+                    />
+                  </div>
+
+                  <div
+                    className="flex flex-col items-start justify-center"
+                    style={{ paddingLeft: "10px" }}
+                  >
+                    <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
+                      {deal.name}
+                    </p>
+                    <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
+                      {deal.price}
+                    </p>
+                    <div className="flex">
+                      <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
-                <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
-                >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                  </div>
-                </div>
-              </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
-                <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
-                >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                  </div>
-                </div>
-              </div>
+              ))}
             </section>
-            <section className="w-full grid grid-cols-1 gap-[16px]">
-              <div className=" ">
+            <section className="w-full sm:w-full grid grid-cols-1 gap-[16px]">
+              <div>
                 <h4 className="text-[24px] font-[500] flex">Hot Deals</h4>
               </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
+              {dealsProducts.map((deal) => (
                 <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
+                  key={deal.id}
+                  className="flex border border-[#E6E6E6] rounded-[6px] w-full items-center hover:border-[#2C742F] hover:shadow-[0px_0px_12px_0px_#20B52652] transition-shadow duration-300"
                 >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
+                  <div className="shrink-0">
+                    <img
+                      src={deal.image}
+                      alt={deal.name}
+                      className="w-[100px] h-[100px] object-cover rounded-lg"
+                    />
+                  </div>
+
+                  <div
+                    className="flex flex-col items-start justify-center"
+                    style={{ paddingLeft: "10px" }}
+                  >
+                    <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
+                      {deal.name}
+                    </p>
+                    <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
+                      {deal.price}
+                    </p>
+                    <div className="flex">
+                      <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
-                <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
-                >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                  </div>
-                </div>
-              </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
-                <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
-                >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                  </div>
-                </div>
-              </div>
+              ))}
             </section>
-            <section className="w-full grid grid-cols-1 gap-[16px]">
-              <div className=" ">
+            <section className="w-full sm:w-full grid grid-cols-1 gap-[16px]">
+              <div>
                 <h4 className="text-[24px] font-[500] flex">Hot Deals</h4>
               </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
+              {dealsProducts.map((deal) => (
                 <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
+                  key={deal.id}
+                  className="flex border border-[#E6E6E6] rounded-[6px] w-full items-center hover:border-[#2C742F] hover:shadow-[0px_0px_12px_0px_#20B52652] transition-shadow duration-300"
                 >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
+                  <div className="shrink-0">
+                    <img
+                      src={deal.image}
+                      alt={deal.name}
+                      className="w-[100px] h-[100px] object-cover rounded-lg"
+                    />
+                  </div>
+
+                  <div
+                    className="flex flex-col items-start justify-center"
+                    style={{ paddingLeft: "10px" }}
+                  >
+                    <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
+                      {deal.name}
+                    </p>
+                    <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
+                      {deal.price}
+                    </p>
+                    <div className="flex">
+                      <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
-                <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
-                >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                  </div>
-                </div>
-              </div>
-              <div className=" flex border border-[#E6E6E6] rounded-[6px] w-full  items-center">
-                <div className="shrink-0">
-                  <img
-                    src={productimage1}
-                    alt="Product"
-                    className="w-[100px] h-[100px] object-cover rounded-lg "
-                  />
-                </div>
-
-                {/* Text Section - No Extra Gaps */}
-                <div
-                  className="flex flex-col items-start justify-center "
-                  style={{ paddingLeft: "10px" }}
-                >
-                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-[400] text-[#2B572E]">
-                    Green Apple
-                  </p>
-                  <p className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[500]">
-                    $14.99
-                  </p>
-                  <div className="flex">
-                    <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                  </div>
-                </div>
-              </div>
+              ))}
             </section>
             <section className="w-full flex justify-center relative">
               <section

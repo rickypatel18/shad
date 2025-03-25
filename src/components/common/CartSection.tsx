@@ -3,7 +3,7 @@ import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { LuSearch } from "react-icons/lu";
 import { HiMenu, HiOutlineShoppingBag, HiX } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
-import "../../assets/js/search.js"
+import "../../assets/js/search.js";
 const CartSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,18 +12,23 @@ const CartSection = () => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-[20px] xl:gap-[40px] h-[34px] md:justify-between mt-0 ">
+    <div className="flex items-center justify-between  gap-[10px] lg:gap-[20px] xl:gap-[40px] h-[34px] md:justify-between mt-0 ">
       {/* Phone Section */}
       <div className="flex items-center justify-center h-[56px] gap-[8px]">
-        <FiPhoneCall className="h-[24px] w-[24px]" />
+        <FiPhoneCall className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]" />
         <p className="hidden xl:block text-[14px] font-[500] leading-none ml-2 ">
           (219) 555-0114
         </p>
       </div>
 
       {/* Icons */}
-      <div className="flex flex-row gap-[20px]">
-        <LuSearch className="h-[24px] w-[24px]" id="search-id"/>
+      <div className="flex flex-row gap-[10px] lg:gap-[20px] justify-center items-center">
+        <div>
+          <LuSearch
+            className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]"
+            id="search-id"
+          />
+        </div>
         <div
           id="search-dropdown"
           className="fixed top-[-50vh] left-0 w-full h-[30vh] bg-white shadow-lg border border-gray-300 opacity-0 scale-100 transition-all duration-300 ease-in-out pointer-events-none flex items-center justify-center overflow-x-auto"
@@ -52,25 +57,29 @@ const CartSection = () => {
             </div>
           </div>
         </div>
-        <FaRegHeart className="h-[24px] w-[24px]" />
+        <div>
+          <FaRegHeart className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]" />
+        </div>
 
         {/* Cart */}
         <div className="relative">
-          <HiOutlineShoppingBag className="h-[24px] w-[24px]" />
+          <HiOutlineShoppingBag className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]" />
           <span className="absolute top-[-5px] left-[12px] md:top-[-6px] md:left-[10px] bg-[#2c742f] text-whitec rounded-full w-[15px] h-[15px] md:w-[17px] md:h-[17px] text-[11px] flex items-center justify-center">
             9
           </span>
         </div>
 
-        <FaRegUser className="h-[22px] w-[24px]" />
+        <div>
+          <FaRegUser className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]" />
+        </div>
 
         {/* Hamburger Menu */}
-        <div className="relative z-50 block lg:hidden">
+        <div className="relative z-50 flex lg:hidden justify-center items-center ">
           <button onClick={toggleMenu}>
             {menuOpen ? (
-              <HiX className="text-2xl" />
+              <HiX className="h-[24px] w-[24px] hidden" />
             ) : (
-              <HiMenu className="text-2xl" />
+              <HiMenu className="h-[24px] w-[24px] " />
             )}
           </button>
 

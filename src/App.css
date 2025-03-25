@@ -36,6 +36,12 @@ body::-webkit-scrollbar {
 }
 
 /* for text */
+.bg-primary {
+  @apply text-[#00B207];
+}
+.bg-secondary {
+  @apply text-[#2B572E];
+}
 .text-primary {
   @apply text-[#00B207];
 }

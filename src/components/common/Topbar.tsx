@@ -7,14 +7,14 @@ import {
     SelectValue,
 } from "@/components/ui/select/select";
 
-const TopbarHeader = () => {
+const Header = () => {
     return (
-        <section className="signup-section w-[100%] bg-[#EDF2EE]  h-[42px] flex justify-center">
+        <section className="signup-section w-[100%] bg-primary h-[30px] md:h-[35px] lg:h-[42px] flex justify-center items-center">
             <div className="w-[100%] lg:w-[80%] flex flex-wrap flex-row justify-between items-center ">
                 {/* Store Location Section  */}
                 <section className="flex items-center gap-[8px] flex-wrap ">
                     <CiLocationOn className="text-secondary h-[18px] w-[18px] " />
-                    <p className="hidden md:block mb-0 text-[12px] font-weight-400 text-secondary">
+                    <p className="hidden sm:flex mb-0 text-[12px] font-weight-400 text-secondary">
                         Store Location: Lincoln- 344, Illinois, Chicago, USA
                     </p>
                 </section>
@@ -74,4 +74,4 @@ const TopbarHeader = () => {
     );
 };
 
-export default TopbarHeader;
+export default Header;

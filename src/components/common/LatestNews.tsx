@@ -21,10 +21,43 @@ import { FiTag } from "react-icons/fi";
 import { GoArrowRight, GoComment } from "react-icons/go";
 
 const LatestNews = () => {
+  const latestNews = [
+    {
+      id: 1,
+      title: "Curabitur porttitor orci eget neque accumsan venenatis.",
+      date: "23",
+      month: "July",
+      author: "Admin",
+      category: "Food",
+      comments: "65 Comments",
+      image: img1, // Replace with actual image URL
+    },
+    {
+      id: 2,
+      title: "Sed ut perspiciatis unde omnis iste natus error sit.",
+      date: "10",
+      month: "June",
+      author: "Admin",
+      category: "Health",
+      comments: "42 Comments",
+      image: img2,
+    },
+    {
+      id: 3,
+      title: "Sed ut perspiciatis unde omnis iste natus error sit.",
+      date: "10",
+      month: "June",
+      author: "Admin",
+      category: "Health",
+      comments: "42 Comments",
+      image: img3,
+    },
+  ];
+
   return (
     <section
       className="w-[100%]  bg-[#F2F2F2] flex justify-center  z-[20] relative overflow-hidden "
-      style={{ padding: "70px 0px"}}
+      style={{ padding: "70px 0px" }}
     >
       <div className="absolute hidden lg:block lg:left-[100px] lg:top-[0px] xl:left-[120px] 2xl:left-[150px] z-[-1] ">
         <img
@@ -128,144 +161,56 @@ const LatestNews = () => {
           className="latest-news-cards-section  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-5 lg:gap-7 xl:gap-8 "
           style={{ marginTop: "40px" }}
         >
-          <div className="bg-white rounded-[8px] relative">
-            <img
-              alt="Sliced oranges on a blue background"
-              className="w-full h-80 object-cover rounded-tl-[8px] rounded-tr-[8px] "
-              src={img2}
-            />
-
-            <div className="absolute top-[240px] left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
-              <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] ">
-                23
-              </span>
-              <span className="text-[12px] font-[500] text-[#808080]">
-                July
-              </span>
-            </div>
-            <div
-              className="flex flex-col gap-[20px] "
-              style={{ padding: "20px" }}
-            >
-              <div className="flex flex-col gap-[8px]">
-                <div className="flex flex-wrap gap-[16px]">
-                  <div className="flex justify-center items-center gap-[4px]  text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>By Admin</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>Food</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>65 Comments</p>
-                  </div>
-                </div>
-                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500]  hover:text-[#2C742F]">
-                  Curabitur porttitor orci eget neque accumsan venenatis.
-                </h4>
-              </div>
-              <button className="flex  items-center gap-[15px] bg-[red-500] text-[#00B207]">
-                <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
-                  Read More
-                </p>
-                <GoArrowRight className="w-5 h-5 text-primary" />
-              </button>
-            </div>
-          </div>
-          <div className="bg-white rounded-[8px] relative">
-            <img
-              alt="Sliced oranges on a blue background"
-              className="w-full h-80 object-cover rounded-tl-[8px] rounded-tr-[8px] "
-              src={img3}
-            />
-
-            <div className="absolute top-[240px]  left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
-              <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] ">
-                23
-              </span>
-              <span className="text-[12px] font-[500] text-[#808080]">
-                July
-              </span>
-            </div>
-            <div
-              className="flex flex-col gap-[20px] "
-              style={{ padding: "20px" }}
-            >
-              <div className="flex flex-col gap-[8px]">
-                <div className="flex flex-wrap gap-[16px]">
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>By Admin</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>Food</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>65 Comments</p>
-                  </div>
-                </div>
-                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500]  hover:text-[#2C742F]">
-                  Curabitur porttitor orci eget neque accumsan venenatis.
-                </h4>
-              </div>
-              <button className="flex items-center gap-[15px] bg-[red-500] text-[#00B207]">
-                <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
-                  Read More
-                </p>
-                <GoArrowRight className="w-5 h-5 text-primary" />
-              </button>
-            </div>
-          </div>
-          <div className="bg-white rounded-[8px] relative">
-            <img
-              alt="Sliced oranges on a blue background"
-              className="w-full h-80 object-cover rounded-tl-[8px] rounded-tr-[8px] "
-              src={img1}
-            />
-
-            <div className="absolute top-[240px]  left-[30px] bg-white  rounded w-13 h-13 flex flex-col items-center justify-center">
-              <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500] ">
-                23
-              </span>
-              <span className="text-[12px] font-[500] text-[#808080]">
-                July
-              </span>
-            </div>
-            <div
-              className="flex flex-col gap-[20px] "
-              style={{ padding: "20px" }}
-            >
-              <div className="flex flex-col gap-[8px]">
-                <div className="flex flex-wrap gap-[16px]">
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>By Admin</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>Food</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
-                    <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
-                    <p>65 Comments</p>
-                  </div>
-                </div>
-                <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500]  hover:text-[#2C742F]">
-                  Curabitur porttitor orci eget neque accumsan venenatis.
-                </h4>
-              </div>
-              <button className="flex items-center gap-[15px] bg-[red-500] text-[#00B207]">
-                <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
-                  Read More
-                </p>
-                <GoArrowRight className="w-5 h-5 text-primary" />
-              </button>
-            </div>
-          </div>
+          {latestNews.map((post) => (
+           <div key={post.id} className="bg-white rounded-[8px] relative group">
+           <img
+             alt={post.title}
+             className="w-full h-80 object-cover rounded-tl-[8px] rounded-tr-[8px]"
+             src={post.image}
+           />
+         
+           <div className="absolute top-[240px] left-[30px] bg-white rounded w-13 h-13 flex flex-col items-center justify-center">
+             <span className="text-[16px] md:text-[18px] lg:text-[20px] font-[500]">
+               {post.date}
+             </span>
+             <span className="text-[12px] font-[500] text-[#808080]">
+               {post.month}
+             </span>
+           </div>
+         
+           <div className="flex flex-col gap-[20px] p-[20px]" style={{padding:"20px"}}>
+             <div className="flex flex-col gap-[8px]">
+               <div className="flex flex-wrap gap-[16px]">
+                 <div className="flex items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
+                   <CiUser className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
+                   <p>By {post.author}</p>
+                 </div>
+                 <div className="flex items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
+                   <FiTag className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
+                   <p>{post.category}</p>
+                 </div>
+                 <div className="flex items-center gap-[4px] text-[13px] lg:text-[14px] font-[400] text-[#4D4D4D]">
+                   <GoComment className="w-4 h-4 md:w-5 md:h-5 text-[#4D4D4D]" />
+                   <p>{post.comments}</p>
+                 </div>
+               </div>
+         
+               {/* Targeting the title color on parent hover */}
+               <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-[500] text-black group-hover:text-[#2C742F] transition-colors duration-300">
+                 {post.title}
+               </h4>
+             </div>
+         
+             <button className="flex items-center gap-[15px] text-[#00B207]">
+               <p className="text-[14px] md:text-[15px] lg:text-[16px] font-[600]">
+                 Read More
+               </p>
+               <GoArrowRight className="w-5 h-5 text-primary" />
+             </button>
+           </div>
+         </div>
+         
+          ))}
         </section>
       </section>
     </section>

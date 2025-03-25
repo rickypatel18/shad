@@ -49,6 +49,7 @@ export function HeroCarousel() {
 
   return (
     <section className="w-full  bg-[#F2F2F2] flex justify-center  relative overflow-visible z-[10]">
+      <section className="absolute-section">
       <div className="abs-div1 absolute hidden lg:block lg:left-[50px] xl:left-[90px] z-[20]">
         <img
           src={img9}
@@ -105,6 +106,7 @@ export function HeroCarousel() {
           className=" lg:w-[130px] lg:h-[90px] xl:w-[140px] xl:h-[100px]"
         />
       </div>
+      </section>
       <div
         className="w-[80%] mx-auto  relative z-[20]"
         style={{ paddingBottom: "80px", marginTop: "70px" }}
@@ -128,7 +130,8 @@ export function HeroCarousel() {
                       <img
                         src={slide.image}
                         alt={slide.title}
-                        className="md:w-[700px] md:h-[500px] lg:w-[700px] lg:h-[500px]"
+                        className="max-w-full "
+                        // className="md:w-[700px] md:h-[500px] lg:w-[700px] lg:h-[500px]"
                       />
                     </div>
                     <div className="lg:col-span-2 text-center items-center md:text-left md:items-start   flex flex-col gap-[20px]  justify-center h-full ">

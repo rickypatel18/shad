@@ -24,49 +24,52 @@ import {
 
 const Footer = () => {
   return (
-    <div className="  main-footer-section w-full bg-[#1a1a1a] flex justify-center relative z-[20] " >
-      <div className="absolute hidden lg:block lg:left-[0%] lg:top-[0%] xl:left-[0%] xl:top-[0%] 2xl:left-[0%] 2xl:top-[0%] z-[-1]">
-        <img
-          src={img2}
-          alt=""
-          className=" lg:h-[400px] lg:w-[300px] xl:h-[350px] xl:w-[250px] 2xl:h-[350px] 2xl:w-[250px] "
-        />
-      </div>
-      <div className="absolute hidden lg:block lg:right-[12%] lg:top-[0%] xl:right-[10%] xl:top-[0%] 2xl:right-[10%] 2xl:top-[0%] z-[-1] ">
-        <img
-          src={img3}
-          alt=""
-          className="lg:h-[130px] lg:w-[75px] xl:h-[140px] xl:w-[80px] 2xl:h-[150px] 2xl:w-[80px] "
-        />
-      </div>
-      <div className="absolute hidden lg:block  lg:right-[0%] lg:top-[45%] xl:right-[0%] xl:top-[45%] 2xl:right-[0%] 2xl:top-[45%] z-[-1] ">
-        <img
-          src={img4}
-          alt=""
-          className="lg:h-[70px] lg:w-[30px] xl:h-[60px] xl:w-[25px] 2xl:h-[60px] 2xl:w-[25px]"
-        />
-      </div>
-      <div className="absolute hidden lg:block lg:right-[1%] lg:top-[3%] xl:right-[1%] xl:top-[3%] 2xl:right-[1%] 2xl:top-[3%] z-[-1]  ">
-        <img
-          src={img5}
-          alt=""
-          className="lg:h-[80px] lg:w-[80px] xl:h-[80px] xl:w-[80px] 2xl:h-[80px] 2xl:w-[80px]"
-        />
-      </div>
-      <div className="absolute hidden lg:block lg:right-[30px] lg:top-[30%] xl:right-[30px] xl:top-[30%] 2xl:right-[30px] 2xl:top-[30%] z-[-1]">
-        <img
-          src={img6}
-          alt=""
-          className="lg:h-[90px] lg:w-[90px] xl:h-[90px] xl:w-[90px] 2xl:h-[90px] 2xl:w-[90px]"
-        />
-      </div>
-      <div className="absolute hidden lg:block lg:right-[5%] lg:bottom-[25%] xl:right-[3%] xl:bottom-[25%] 2xl:right-[3%] 2xl:bottom-[25%] z-[-1] ">
-        <img
-          src={img7}
-          alt=""
-          className="lg:h-[70px] lg:w-[100px] xl:h-[70px] xl:w-[100px] 2xl:h-[70px] 2xl:w-[100px]"
-        />
-      </div>
+    <div className="  main-footer-section w-full bg-[#1a1a1a] flex justify-center relative z-[20] ">
+      <section className="absolute-section">
+        <div className="absolute hidden lg:block lg:left-[0%] lg:top-[0%] xl:left-[0%] xl:top-[0%] 2xl:left-[0%] 2xl:top-[0%] z-[-1]">
+          <img
+            src={img2}
+            alt=""
+            className=" lg:h-[400px] lg:w-[300px] xl:h-[350px] xl:w-[250px] 2xl:h-[350px] 2xl:w-[250px] "
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:right-[12%] lg:top-[0%] xl:right-[10%] xl:top-[0%] 2xl:right-[10%] 2xl:top-[0%] z-[-1] ">
+          <img
+            src={img3}
+            alt=""
+            className="lg:h-[130px] lg:w-[75px] xl:h-[140px] xl:w-[80px] 2xl:h-[150px] 2xl:w-[80px] "
+          />
+        </div>
+        <div className="absolute hidden lg:block  lg:right-[0%] lg:top-[45%] xl:right-[0%] xl:top-[45%] 2xl:right-[0%] 2xl:top-[45%] z-[-1] ">
+          <img
+            src={img4}
+            alt=""
+            className="lg:h-[70px] lg:w-[30px] xl:h-[60px] xl:w-[25px] 2xl:h-[60px] 2xl:w-[25px]"
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:right-[1%] lg:top-[3%] xl:right-[1%] xl:top-[3%] 2xl:right-[1%] 2xl:top-[3%] z-[-1]  ">
+          <img
+            src={img5}
+            alt=""
+            className="lg:h-[80px] lg:w-[80px] xl:h-[80px] xl:w-[80px] 2xl:h-[80px] 2xl:w-[80px]"
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:right-[30px] lg:top-[30%] xl:right-[30px] xl:top-[30%] 2xl:right-[30px] 2xl:top-[30%] z-[-1]">
+          <img
+            src={img6}
+            alt=""
+            className="lg:h-[90px] lg:w-[90px] xl:h-[90px] xl:w-[90px] 2xl:h-[90px] 2xl:w-[90px]"
+          />
+        </div>
+        <div className="absolute hidden lg:block lg:right-[5%] lg:bottom-[25%] xl:right-[3%] xl:bottom-[25%] 2xl:right-[3%] 2xl:bottom-[25%] z-[-1] ">
+          <img
+            src={img7}
+            alt=""
+            className="lg:h-[70px] lg:w-[100px] xl:h-[70px] xl:w-[100px] 2xl:h-[70px] 2xl:w-[100px]"
+          />
+        </div>
+      </section>
+
       <section className=" w-full text-white pt-0 lg:pt-[300px] mx-auto flex flex-col justify-center items-center">
         <div className="w-full lg:w-[80%] ">
           <div
@@ -108,7 +111,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col gap-[20px]  ">
-              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+              <h3 className="  helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF] w-fit">
                 My Account
               </h3>
               <ul className="flex flex-col gap-2 leading-none lg:leading-normal">
@@ -155,7 +158,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-[20px]  ">
-              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF] w-fit">
                 Helps
               </h3>
               <ul className="flex flex-col gap-2 leading-none lg:leading-normal">
@@ -194,7 +197,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-[20px] ">
-              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500]">
+              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] w-fit">
                 Helps
               </h3>
               <ul className="flex flex-col gap-2 leading-none lg:leading-normal">
@@ -233,7 +236,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-[20px]  col-span-2 ">
-              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF]">
+              <h3 className="helps-title text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-[#FFFFFF] w-fit">
                 Download Mobile App
               </h3>
 
@@ -287,11 +290,12 @@ const Footer = () => {
           style={{ padding: "20px 0px" }}
         >
           <div className="w-full lg:w-[80%] flex flex-col items-center justify-center md:flex-row md:justify-between ">
+            
             <div className="absolute hidden lg:block lg:left-[2%] lg:top-[-60%] xl:left-[3%] xl:top-[-60%] 2xl:left-[3%] 2xl:top-[-65%] z-[20] ">
               <img
                 src={img1}
                 alt=""
-                className="lg:h-[70px] lg:w-[60px] xl:h-[70px] xl:w-[60px] 2xl:h-[70px] 2xl:w-[60px]"
+                className="lg:h-[70px] lg:w-[60px] xl:h-[70px] xl:w-[60px] 2xl:h-[75px] 2xl:w-[65px]"
               />
             </div>
 
@@ -325,7 +329,7 @@ const Footer = () => {
               />
               <img
                 alt="Secure Payment logo"
-                className="h-[29px] w-[39px] object-cover border border-[#1a1a1a]"
+                className="h-[29px] w-[60px] object-cover border border-[#1a1a1a]"
                 src={cartCard}
               />
             </div>

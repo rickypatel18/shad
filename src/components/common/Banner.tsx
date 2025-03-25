@@ -70,7 +70,7 @@ const Banner = () => {
                 </div>
               </div>
               <div>
-                <CustomButton text="Shop Now" hoverBgColor="hover:bg-[#E5E5E5]">
+                <CustomButton text="Shop Now" hoverBgColor="hover:bg-[#10a71a]">
                   <GoArrowRight className="w-5 h-5 text-white" />
                 </CustomButton>
               </div>
@@ -141,8 +141,8 @@ const Banner = () => {
                 </div>
               </div>
               <div>
-                <CustomButton text="Shop Now">
-                  <GoArrowRight className="w-5 h-5 text-primary" />
+              <CustomButton text="Shop Now" hoverBgColor="hover:bg-[#10a71a]">
+                  <GoArrowRight className="w-5 h-5 text-white" />
                 </CustomButton>
               </div>
             </div>

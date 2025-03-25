@@ -6,8 +6,12 @@ import img5 from "../../../assets/images/carousal/carousal-logo-img/food.png";
 import img6 from "../../../assets/images/carousal/carousal-logo-img/mango-1.png";
 import line from "../../../assets/images/carousal/carousal-logo-img/Line 9.png";
 import img_1 from "../../../assets/images/leaf/Group 4-contact.png";
+import React from "react";
 
 const Carousal = () => {
+
+  const images = [img1, img2, img3, img4, img5, img6];
+
   return (
     <div
       className="w-full flex justify-center relative z-[20]  overflow-hidden "
@@ -20,34 +24,24 @@ const Carousal = () => {
         />
       </div>
       <div className="overflow-x-auto carousal whitespace-nowrap w-[100%] lg:w-[80%] ">
-        <div
-          className="flex items-center justify-between gap-8 lg:gap-10 "
-          style={{ padding: "70px 0px" }}
-        >
-          {/* <!-- Image 1 --> */}
-          <img src={img1} alt="Image 1" className="max-w-[120px] h-auto mr-2" />
-          <img src={line} alt="Divider" className="max-w-[50px] mr-2" />
-
-          {/* <!-- Image 2 --> */}
-          <img src={img2} alt="Image 2" className="max-w-[120px] h-auto mr-2" />
-          <img src={line} alt="Divider" className="max-w-[50px] mr-2" />
-
-          {/* <!-- Image 3 --> */}
-          <img src={img3} alt="Image 3" className="max-w-[120px] h-auto mr-2" />
-          <img src={line} alt="Divider" className="max-w-[50px] mr-2" />
-
-          {/* <!-- Image 4 --> */}
-          <img src={img4} alt="Image 4" className="max-w-[120px] h-auto mr-2" />
-          <img src={line} alt="Divider" className="max-w-[50px] mr-2" />
-
-          {/* <!-- Image 5 --> */}
-          <img src={img5} alt="Image 5" className="max-w-[120px] h-auto mr-2" />
-          <img src={line} alt="Divider" className="max-w-[50px] mr-2" />
-
-          {/* <!-- Image 6 (No Divider after last image) --> */}
-          <img src={img6} alt="Image 6" className="max-w-[120px] h-auto" />
-        </div>
-        {/* contact us */}
+      <div
+      className="flex items-center justify-between gap-8 lg:gap-10"
+      style={{ padding: "70px 0px" }}
+    >
+      {images.map((image, index) => (
+        <React.Fragment key={index}>
+          <img
+            src={image}
+            alt={`Image ${index + 1}`}
+            className="max-w-[120px] h-auto mr-2"
+          />
+          {/* Add divider unless it's the last image */}
+          {index !== images.length - 1 && (
+            <img src={line} alt="Divider" className="max-w-[50px] mr-2" />
+          )}
+        </React.Fragment>
+      ))}
+    </div>
       </div>
     </div>
   );

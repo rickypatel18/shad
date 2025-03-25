@@ -6,12 +6,12 @@ import inc_h from "../../../assets/images/incomplete/incomplete-hovered.png";
 
 const FeatureCard = () => {
   return (
-    <section className="feature-section w-full mx-auto ">
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-[24px] justify-center items-stretch text-center shadow-[0px_0.5px_0px_#CCCCCC]">
+    <section className="feature-section w-full mx-auto flex justify-center ">
+      <div className="lg:w-[80%] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-[24px] justify-center items-stretch text-center shadow-[0px_0.5px_0px_#CCCCCC] ">
         {/* <!-- Feature Card --> */}
 
         <div
-          className="group flex flex-col items-center text-center gap-[16px] h-full feature-card-hover"
+          className="group flex flex-col items-center text-center gap-[16px] h-full feature-card-hover  "
           style={{ padding: "40px" }}
         >
           {/* Image Container */}
